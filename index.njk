@@ -1,0 +1,23 @@
+---
+layout: layout.njk
+title:
+---
+
+{% include "partials/_header.njk" %}
+
+ <main>
+      <ul class="list">
+        <a href="/ideas">
+          <li>My current idea's and projects</li>
+        </a>
+        <a href="/now">
+          <li>What am I doing now</li>
+        </a>
+
+        {%- for post in collections.post -%}
+          <a href="/posts/how-to-get-your-attention-back">
+          <li>Article: {{ page.date.toUTCString() }} - {{ post.data.title }}</li>
+        </a>
+{%- endfor -%}
+      </ul>
+    </main>
