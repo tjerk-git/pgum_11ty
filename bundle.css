@@ -181,3 +181,9 @@ audio {
     padding: 0.8rem;
   }
 }
+
+ul li{
+  margin-top:1rem;
+  margin-left:2rem;
+  margin-bottom:1rem;
+}
