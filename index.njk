@@ -3,20 +3,79 @@ layout: layout.njk
 title:
 ---
 
-{% include "partials/_header.njk" %}
 
  <main>
-      <ul class="list">
-        <a href="/ideas">
-          <li>My current idea's and projects</li>
-        </a>
-        <a href="/now">
-          <li>What am I doing now</li>
-        </a>
-        {%- for post in collections.post -%}
-          <a href="{{ post.url }}">
-          <li>Article: {{ post.data.title }}</li>
-        </a>
-{%- endfor -%}
-      </ul>
+      <section class="intro">
+        <div class="video-fit-container">
+          <video src="images/loop_four.mp4" loop muted autoplay></video>
+        </div>
+      </section>
+
+      <section class="playlist">
+        <div class="playlist__header">
+          <h2>FEATURING</h2>
+        </div>
+
+        <table class="playlist-table">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cactus">
+              <td>TIENSKIP</td>
+              <td>JUNI 2024</td>
+              <td>DEMOCRATIE VOOR JONGEREN</td>
+              <td><a href="https://tienskip.frl" target="_blank" class="button-link"
+                  aria-roledescription="button">CHECK</a></td>
+            </tr>
+            <tr class="black">
+              <td>KIJKGAT</td>
+              <td>MEI 2024</td>
+              <td>ZIE WAT JE NOOIT ZAG</td>
+              <td><a href="https://kijkgat.com" target="_blank" class="button-link"
+                  aria-roledescription="button">CHECK</a></td>
+            </tr>
+            <tr class="blurple">
+              <td>HAMAKI</td>
+              <td>MEI 2024</td>
+              <td>MEETINGS MADE EASY</td>
+              <td><a href="https://hamaki.pro" target="_blank" class="button-link"
+                  aria-roledescription="button">CHECK</a></td>
+            </tr>
+            <tr class="taxi">
+              <td>DESIGN CHALLENGE GENERATOR</td>
+              <td>JUNI 2023</td>
+              <td>CREATE DESIGN FUN CHALLENGES</td>
+              <td><a href="https://sprint.cards" target="_blank" class="button-link"
+                  aria-roledescription="button">CHECK</a></td>
+            </tr>
+            <tr class="baby">
+              <td>SNEUP</td>
+              <td>MEI 2023</td>
+              <td>FIND 2nd HAND STORES NEAR YOU</td>
+              <td><a href="https://sneup.it" target="_blank" class="button-link" aria-roledescription="button">CHECK</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="why">
+        <h1>POTLOODGUM,</h1>
+        <h2>WEBDESIGN FOR HUMAN BEINGS*</h2>
+        <span>*I only work for non profit organisations and good causes</span>
+
+        <ul>
+          <li>OPEN SOURCE</li>
+          <li>ACCESSIBLE</li>
+          <li>SIMPLE</li>
+          <li>DURABLE</li>
+        </ul>
+
+      </section>
     </main>
