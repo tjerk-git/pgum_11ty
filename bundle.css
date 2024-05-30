@@ -235,7 +235,7 @@ header img {
   max-width: 20rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 675px) {
   .intro h1 {
     font-size: 3rem;
   }
