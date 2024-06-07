@@ -251,7 +251,6 @@ header img {
   z-index: 2;
   background-color: var(--off-white);
   font-size: 6rem;
-  line-height: 24px;
   position: -webkit-sticky;
   position: sticky;
   top: 0%;
@@ -268,6 +267,7 @@ header img {
 
   .navbar {
     font-size: 2.2rem;
+    padding: 0.4rem;
   }
 
   .intro h1 {
