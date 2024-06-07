@@ -247,6 +247,23 @@ header img {
   max-width: 20rem;
 }
 
+.navbar {
+  z-index: 2;
+  background-color: var(--off-white);
+  font-size: 6rem;
+  line-height: 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+}
+
 @media (max-width: 675px) {
   .intro h1 {
     font-size: 3rem;
