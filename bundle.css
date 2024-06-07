@@ -98,6 +98,18 @@ aside {
   font-weight: 700;
 }
 
+.head {
+  display: flex;
+}
+
+.head h1 {
+  font-size: 18vw;
+}
+
+.logo {
+  max-width: 10rem;
+}
+
 .playlist {
   background: var(--pink);
 }
