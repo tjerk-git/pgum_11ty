@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
   }
 }

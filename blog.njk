@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+title: BLOG
+---
+{% include "partials/_header.njk" %}
+
+<main>
+
+  <ul class="blog-items">
+    {%- for post in collections.post -%}
+      <li>
+        <a
+          {% if page.url == post.url %}
+            aria-current="page"
+          {% endif %}
+          href="{{ post.url }}"
+        >
+          {{- post.data.title -}}
+        </a>
+          <span>{{- post.data.date | timeAgo  -}}</span>
+      </li>
+    {%- endfor -%}
+  </ul>
+
+</main>
