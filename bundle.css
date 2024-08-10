@@ -378,6 +378,9 @@ p {
 
 @media (max-width: 675px) {
 
+  header h1 {
+    font-size: 3rem;
+  }
 
   .intro h1 {
     font-size: 3rem;
