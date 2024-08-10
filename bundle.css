@@ -288,7 +288,6 @@ aside {
   background: var(--light-pink);
   padding: 4rem;
   color: #E06E6E;
-  margin-bottom: 4rem;
 }
 
 .why h1 {
@@ -378,6 +377,10 @@ p {
 
 @media (max-width: 675px) {
 
+  body {
+    max-width: 100%;
+  }
+
   header h1 {
     font-size: 3rem;
   }
@@ -431,6 +434,12 @@ p {
   padding: 2rem;
   color: var(--text-black);
   font-size: 2rem;
+  background-color: rgba(255, 254, 254, 0.3);
+
+}
+
+.card:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .card:last-of-type {
