@@ -1,13 +1,30 @@
 <header>
+ 
   <img src="/images/potloodgum.webp" alt="Potloodgum logo" class="logo">
+   <a href="/" aria-label="Home" aria-roledescription="button">
   <h1>POTLOODGUM</h1>
+  </a>
 </header>
 
-  <nav>
-    <ul>
-      <li><a href="/" aria-label="Now" aria-roledescription="button">FEATURING</a></li>
-      <li><a href="/now" aria-label="Now" aria-roledescription="button">NOW</a></li>
-      <li><a href="/blog" aria-label="Blog" aria-roledescription="button">BLOG</a></li>
-       <li><a href="/photos" aria-label="Photography" aria-roledescription="button">PHOTOGRAPHY</a></li>
-    </ul>
-  </nav>
+{% set navItems = [
+  { url: "/now", label: "NOW", ariaLabel: "Now" },
+  { url: "/blog", label: "BLOG", ariaLabel: "Blog" },
+  { url: "/photos", label: "PHOTOGRAPHY", ariaLabel: "Photography" }
+] %}
+
+<nav>
+  <ul>
+    {% for item in navItems %}
+      <li>
+
+        <a href="{{ item.url }}"
+           aria-label="{{ item.ariaLabel }}"
+           aria-roledescription="button"
+           {% if page.url == item.url %}aria-current="page"{% endif %}
+           class="{% if item.url in page.url %}active{% endif %}">
+          {{ item.label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -91,6 +91,7 @@ li {
 nav ul li a {
   font-size: 2rem;
   color: var(--black);
+  text-decoration: none;
 }
 
 article {
@@ -493,6 +494,11 @@ p {
   display: block;
 }
 
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 768px) {
   .gallery {
