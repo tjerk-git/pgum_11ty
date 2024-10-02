@@ -492,3 +492,16 @@ p {
   object-fit: cover;
   display: block;
 }
+
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+}
