@@ -24,6 +24,8 @@
   --wes-pink-dark: #8a1c8c;
   --wes-green: #2cae4d;
   --wes-green-dark: #0a5e1f;
+  --cursor-size: 24px;
+  --background: #f2f2f2;
 }
 
 body {
@@ -499,6 +501,52 @@ p {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.cursor {
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: 50%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--off-white);
+
+  background: var(--pink);
+
+  pointer-events: none;
+}
+
+
+
+[data-hover] {
+  position: relative;
+
+  [data-hover-bounds] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    inset: 0;
+
+    outline: 1px solid red;
+  }
+
+  &:hover {
+    [data-hover-bounds] {
+      transform: scale(4);
+    }
+  }
+}
+
+.cta {
+  width: 100px;
+  position: fixed;
+  top: -999px;
+  left: -999px;
+  pointer-events: none;
+}
+
 
 @media screen and (max-width: 768px) {
   .gallery {

@@ -20,6 +20,7 @@
         <a href="{{ item.url }}"
            aria-label="{{ item.ariaLabel }}"
            aria-roledescription="button"
+           
            {% if page.url == item.url %}aria-current="page"{% endif %}
            class="{% if item.url in page.url %}active{% endif %}">
           {{ item.label }}
