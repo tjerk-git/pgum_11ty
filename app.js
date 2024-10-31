@@ -161,3 +161,8 @@ function onResize() {
 gsap.ticker.add(update);
 window.addEventListener("pointermove", onMouseMove);
 window.addEventListener("resize", onResize);
+
+
+var lightbox = GLightbox({
+  selector: '.lightbox'
+});

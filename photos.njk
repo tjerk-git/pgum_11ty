@@ -7,124 +7,44 @@ title: Photos
 {% include "partials/_header.njk" %}
 
 <main>
-  
-<div class="gallery">
-            <div class="gallery-item">
-                <img src="/images/photos/1.webp" alt="Dog and person on a beach, soft clouds">
-            </div>
-            <div class="gallery-item">
-                <img src="/images/photos/2.webp" alt="Tiny window surrounded by green leaves">
-            </div>
-            <div class="gallery-item">
-                <img src="/images/photos/3.webp" alt="Hand against a beam of light, moved">
-            </div>
-            <div class="gallery-item">
-                <img src="/images/photos/4.webp" alt="Beam of red light from a car passing by on a misty road">
-            </div>
-            <div class="gallery-item">
-                <img src="/images/photos/5.webp" alt="A festival crowd surrounded by dust">
-            </div>
-            <div class="gallery-item">
-                <img src="/images/photos/6.webp" alt="Two people walking on a beach in the distance">
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/7.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/8.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/9.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/10.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/11.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/12.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/13.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/14.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/15.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/16.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/17.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/18.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/19.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
-                     <div class="gallery-item">
-                <img src="/images/photos/20.webp" alt="Street">
-                <div class="overlay">
-                    <h3>City Life</h3>
-                    <p>A bustling street scene in a vibrant metropolis</p>
-                </div>
-            </div>
+<div class="photo-container">
+    {% for i in range(1, 24) %}
+        <div class="photo">
+            <a href="/images/photos/{{ i }}.webp" class="lightbox">
+                <img src="/images/photos/{{ i }}.webp" alt="Photo {{ i }}">
+            </a>
         </div>
+    {% endfor %}
+</div>
 
+<style>
+    .photo-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .photo{
+        max-width: 300px;
+        padding:1rem;
+    }
+
+    .photo img {
+        max-width: 100%;
+        height: auto;
+        
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+        .photo-container {
+            flex-direction: column;
+        }
+
+        .photo {
+            max-width: 100%;
+        }
+    }
+</style>
 </main>
