@@ -258,14 +258,19 @@ text-decoration: none;
 }
 
 .menu-overlay{
-  position:absolute;
-  right:-110vw;
-  top:0;
-  width:100vw;
-  height:100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--black);
   transition: right 0.3s ease-in;
-  z-index:1;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 .card {
@@ -674,7 +679,7 @@ footer a:hover {
   }
 
   .menu-overlay a {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .mail-link {
@@ -722,7 +727,7 @@ footer a:hover {
   }
 
   .menu-overlay a {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 
   .mail-link {
