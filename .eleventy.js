@@ -1,14 +1,6 @@
-
-const moment = require('moment');
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.addPassthroughCopy("app.js");
-  eleventyConfig.addPassthroughCopy("lightbox.js");
-
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addFilter('timeAgo', function (date) {
-    if (!date) return '';
-    return moment(date).fromNow();
-  });
+  eleventyConfig.addPassthroughCopy("js/profile-canvas.js");
+  eleventyConfig.addPassthroughCopy({"images": "images"});
 };

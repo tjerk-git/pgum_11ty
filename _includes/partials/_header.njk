@@ -1,30 +1,47 @@
 <header>
- 
+  <a href="/">
   <img src="/images/potloodgum.webp" alt="Potloodgum logo" class="logo">
-   <a href="/" aria-label="Home" aria-roledescription="button">
-  <h1>POTLOODGUM</h1>
+  </a>
+  <a href="" role="button" aria-label="menu" id="menu-button" class="menu-button">
+  MENU 
   </a>
 </header>
 
 {% set navItems = [
-  { url: "/now", label: "NOW", ariaLabel: "Now" },
-  { url: "/photos", label: "PHOTOGRAPHY", ariaLabel: "Photography" }
+  { url: "/", label: "Projects", ariaLabel: "Projects" },
+  { url: "/now", label: "What I'm up to", ariaLabel: "Now" },
+  { url: "/about", label: "About", ariaLabel: "About" }
 ] %}
 
-<nav>
-  <ul>
-    {% for item in navItems %}
-      <li>
+<div class="menu-overlay">
 
-        <a href="{{ item.url }}"
-           aria-label="{{ item.ariaLabel }}"
-           aria-roledescription="button"
-           
-           {% if page.url == item.url %}aria-current="page"{% endif %}
-           class="{% if item.url in page.url %}active{% endif %}">
-          {{ item.label }}
+  <div class="menu-overlay-inner">
+  <button id="close-menu" class="close-menu" role="button" aria-label="Close menu">
+    Close menu
+  </button>
+
+  <nav>
+    <ul>
+      {% for item in navItems %}
+        <li>
+
+          <a href="{{ item.url }}"
+            aria-label="{{ item.ariaLabel }}"
+            aria-roledescription="button"
+            
+            {% if page.url == item.url %}aria-current="page"{% endif %}
+            class="{% if item.url in page.url %}active{% endif %}">
+            {{ item.label }}
+          </a>
+        </li>
+      {% endfor %}
+
+      <li>
+        <a href="mailto:hello@potloodgum.com" class="mail-link">
+          hello@potloodgum.com
         </a>
       </li>
-    {% endfor %}
-  </ul>
-</nav>
+    </ul>
+  </nav>
+</div>
+</div>

@@ -13,17 +13,16 @@ title: Potloodgum
     <meta property="og:image" content="/images/og.png" />
     <meta name="theme-color" content="#F4CDCD">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <script src="/lightbox.js" defer></script>
-    <script src="/app.js" defer type="module"></script>
   
   </head>
   <body>
-    <div class="cursor"></div>
-
-  
 
     {{ content | safe }}
-
+    {% include "partials/_footer.njk" %}
+    <script src="/app.js" defer type="module"></script>
+    {% if page.url === "/about/" %}
+    <script src="/js/profile-canvas.js" defer></script>
+    {% endif %}
     <script data-goatcounter="https://pgum.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   </body>
