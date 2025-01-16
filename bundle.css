@@ -348,17 +348,17 @@ h1 a{
   border-top-left-radius: 1rem;
 }
 .why {
-  background: var(--light-pink);
+  background: var(--pink);
   padding: 4rem;
-  color: #E06E6E;
 }
 
 .pgum {
   display: inline-block;
-  font-size: 8rem;
-  font-weight: bold;
+  font-size: 11rem;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 600;
+  color: var(--off-white);
 }
 
 .pgum span {
@@ -377,11 +377,6 @@ h1 a{
 .pgum span:nth-child(8) { animation: fadeInScale 0.5s ease forwards 0.8s; }
 .pgum span:nth-child(9) { animation: fadeInScale 0.5s ease forwards 0.9s; }
 .pgum span:nth-child(10) { animation: fadeInScale 0.5s ease forwards 1s; }
-
-.pgum span:hover {
-  animation: fadeAway 0.5s ease forwards;
-  cursor: default;
-}
 
 
 
@@ -410,11 +405,9 @@ h1 a{
 @keyframes fadeInScale {
   0% {
     opacity: 0;
-    transform: scale(0.5);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
@@ -422,8 +415,13 @@ h1 a{
   0% {
     opacity: 1;
   }
-  100% {
+
+  50% {
     opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -627,7 +625,6 @@ footer a:hover {
   display: block;
   width: 100%;
   height: auto;
-  cursor: url('/images/paintbrush.svg') 8 8, auto;
 }
 
 .tooltip {
@@ -645,11 +642,72 @@ footer a:hover {
   pointer-events: none;
 }
 
-.canvas-wrapper:hover .tooltip {
-  opacity: 1;
+.subtitle{
+  display:flex;
+  flex-direction:column;
+  font-size:7rem;
+  color: white;
+  gap:0;
+  line-height:0.9;
+  width: 500px;
+  perspective: 500px;
 }
 
+.subtitle span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  
+}
+
+.subtitle span:nth-child(odd) {
+  transform: rotate3d(1, 0, 0, 20deg);
+  animation: tiltFirst 2s ease;
+}
+
+.subtitle span:nth-child(odd):hover {
+  transform: rotate3d(1, 0, 0, 0deg);
+}
+
+.subtitle span:nth-child(even) {
+  transform: rotate3d(1, 0, 0, -20deg);
+  animation: titleSecond 2s ease;
+}
+
+.subtitle span:nth-child(even):hover {
+  transform: rotate3d(1, 0, 0, 0deg);
+}
+
+.subtitle span:last-child {
+  transform: rotate(0deg);
+  font-size: 1.5rem;
+}
+
+@keyframes tiltFirst {
+  0% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 20deg);
+  }
+} 
+
+@keyframes titleSecond{
+  0% {
+    transform: rotate3d(1, 0, 0, 20deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, -20deg);
+  }
+}
+
+
+
 @media (max-width: 768px) {
+
+  .pgum{
+    font-size: 5rem !important;
+  }
+
   h1 {
     font-size: 2rem !important;
   }
@@ -706,6 +764,23 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+
+  .why{
+    padding:1rem;
+  }
+
+  .subtitle{
+    font-size:2rem;
+  }
+
+  .subtitle span:last-child{
+    font-size:0.7rem;
+  }
+
+  .pgum{
+    font-size: 3rem !important;
+  }
+
   h1 {
     font-size: 1.75rem !important;
   }
