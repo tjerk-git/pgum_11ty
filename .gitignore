@@ -3,3 +3,4 @@ _site/
 .env
 .DS_Store
 *.log
+images/

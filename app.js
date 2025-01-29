@@ -18,3 +18,4 @@ menuLinks.forEach((link) => {
         menuOverlay.classList.remove('open');
     });
 });
+

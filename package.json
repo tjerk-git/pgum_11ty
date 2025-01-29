@@ -15,6 +15,8 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "clean-css": "^5.3.3",
+    "nodemon": "^2.0.22",
+    "terser": "^5.37.0"
   }
 }
