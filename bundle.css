@@ -179,14 +179,29 @@ mark {
   color: var(--dark-green);
 }
 
+tr:hover{
+  color:white;
+  cursor: pointer;
+}
+
 .black {
   background: var(--black);
-  color: var(--off-white);
+  color: rgb(157, 157, 157);
 }
 
 .taxi {
   background: var(--yellow);
   color: var(--dark-yellow);
+}
+
+.red-dark{
+  background: var(--wes-red-dark);
+  color: var(--wes-red);
+}
+
+.wes-blue-dark{
+  background: var(--wes-blue-dark);
+  color: #a0c3ff;
 }
 
 .baby {
@@ -618,6 +633,35 @@ footer a:hover {
   width: fit-content;
   margin: 2rem auto;
   max-width: 300px;
+  cursor: crosshair;
+}
+
+.canvas-wrapper canvas {
+  border: 2px dashed var(--light-pink);
+  transition: border-color 0.2s ease;
+}
+
+.canvas-wrapper:hover canvas {
+  border-color: var(--pink);
+}
+
+.canvas-wrapper .tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--pink);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  pointer-events: none;
+  opacity: 1;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.canvas-wrapper:hover .tooltip {
+  background: var(--purple);
 }
 
 #profileCanvas {
