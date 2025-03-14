@@ -1,4 +1,3 @@
-
 @import url(https://fonts.bunny.net/css);
 :root {
   --pink: #FF79A4;
@@ -38,6 +37,10 @@ body {
   padding: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--off-white);
 }
 
 h1 {
@@ -120,13 +123,22 @@ mark {
   justify-content: flex-end;
 }
 
-.playlist__header h2 {
+.playlist__header h1 {
   font-size: 8rem;
   color: var(--off-white);
   font-weight: 400;
   padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.playlist__header h2 {
+  font-size: 4rem;
+  color: var(--off-white);
+  font-weight: 400;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .playlist__content {
@@ -168,6 +180,7 @@ mark {
 .playlist-table td {
   padding-left: 1rem;
   padding-right: 1rem;
+  font-weight: 400;
 }
 
 .playlist-table th {
@@ -283,6 +296,10 @@ text-decoration: none;
   overflow-y: auto;
 }
 
+.menu-overlay.open {
+  right: 0;
+}
+
 body.menu-open {
   overflow: hidden;
 }
@@ -305,15 +322,17 @@ body.menu-open {
   letter-spacing: 0.01em;
 }
 
-.card h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-  color: var(--text-black);
+.card h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: var(--off-white);
 }
 
-.menu-overlay.open{
-  right:0;
+.card h2 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--off-white);
 }
 
 .menu-overlay-inner{
@@ -363,7 +382,21 @@ h1 a{
 }
 .why {
   background: var(--pink);
-  padding: 2rem;
+  padding: 4rem;
+}
+
+.why > h1, 
+.why > h2, 
+.why > h3, 
+.why > h4, 
+.why > h5, 
+.why > h6 {
+  color: var(--black);
+}
+
+.why > span {
+  color: white;
+  font-size: 1rem;
 }
 
 .pgum {
@@ -373,12 +406,14 @@ h1 a{
   text-align: center;
   font-weight: 600;
   color: var(--off-white);
+  margin-bottom: 2rem;
 }
 
 .pgum span {
   display: inline-block;
   transition: transform 0.3s ease, opacity 0.3s ease;
   z-index:0;
+  color: var(--off-white);
 }
 
 .pgum span:nth-child(1) { animation: fadeInScale 0.5s ease forwards 0.1s; }
@@ -392,50 +427,64 @@ h1 a{
 .pgum span:nth-child(9) { animation: fadeInScale 0.5s ease forwards 0.9s; }
 .pgum span:nth-child(10) { animation: fadeInScale 0.5s ease forwards 1s; }
 
-
-
-@keyframes fadeInRotate {
-  0% {
-    opacity: 0;
-    transform: rotate(-45deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(0);
-  }
+.subtitle{
+  display:flex;
+  flex-direction:column;
+  font-size:4rem;
+  font-weight: 400;
+  color: var(--off-white);
+  gap:0;
+  line-height:0.9;
+  width: 100%;
+  max-width: 500px;
+  perspective: 500px;
+  margin-bottom: 1rem;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.subtitle span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color: var(--off-white);
 }
 
-@keyframes fadeInScale {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.subtitle span:nth-child(odd) {
+  transform: rotate3d(1, 0, 0, 20deg);
+  animation: tiltFirst 2s ease;
 }
 
-@keyframes fadeAway {
+.subtitle span:nth-child(odd):hover {
+  transform: rotate3d(1, 0, 0, 0deg);
+}
+
+.subtitle span:nth-child(even) {
+  transform: rotate3d(1, 0, 0, -20deg);
+  animation: titleSecond 2s ease;
+}
+
+.subtitle span:nth-child(even):hover {
+  transform: rotate3d(1, 0, 0, 0deg);
+}
+
+.subtitle span:last-child {
+  transform: rotate(0deg);
+  font-size: 1.5rem;
+}
+
+@keyframes tiltFirst {
   0% {
-    opacity: 1;
+    transform: rotate3d(1, 0, 0, 0deg);
   }
-
-  50% {
-    opacity: 0.2;
-  }
-
   100% {
-    opacity: 1;
+    transform: rotate3d(1, 0, 0, 20deg);
+  }
+} 
+
+@keyframes titleSecond{
+  0% {
+    transform: rotate3d(1, 0, 0, 20deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, -20deg);
   }
 }
 
@@ -685,65 +734,18 @@ footer a:hover {
   pointer-events: none;
 }
 
-.subtitle{
-  display:flex;
-  flex-direction:column;
-  font-size:4rem;
-  color: white;
-  gap:0;
-  line-height:0.9;
-  width: 500px;
-  perspective: 500px;
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
-
-.subtitle span {
-  display: inline-block;
-  transition: transform 0.3s ease;
-  
-}
-
-.subtitle span:nth-child(odd) {
-  transform: rotate3d(1, 0, 0, 20deg);
-  animation: tiltFirst 2s ease;
-}
-
-.subtitle span:nth-child(odd):hover {
-  transform: rotate3d(1, 0, 0, 0deg);
-}
-
-.subtitle span:nth-child(even) {
-  transform: rotate3d(1, 0, 0, -20deg);
-  animation: titleSecond 2s ease;
-}
-
-.subtitle span:nth-child(even):hover {
-  transform: rotate3d(1, 0, 0, 0deg);
-}
-
-.subtitle span:last-child {
-  transform: rotate(0deg);
-  font-size: 1.5rem;
-}
-
-@keyframes tiltFirst {
-  0% {
-    transform: rotate3d(1, 0, 0, 0deg);
-  }
-  100% {
-    transform: rotate3d(1, 0, 0, 20deg);
-  }
-} 
-
-@keyframes titleSecond{
-  0% {
-    transform: rotate3d(1, 0, 0, 20deg);
-  }
-  100% {
-    transform: rotate3d(1, 0, 0, -20deg);
-  }
-}
-
-
 
 @media (max-width: 768px) {
 
@@ -803,6 +805,23 @@ footer a:hover {
 
   main {
     padding: 0;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    width: 100%;
+    max-width: none;
+  }
+
+  .subtitle span:last-child {
+    font-size: 1rem;
+  }
+
+  .playlist__item {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -872,7 +891,6 @@ footer a:hover {
     max-width: 250px;
   }
 }
-
 
 .pswp-docs__home-gallery {
   grid-gap:10px;

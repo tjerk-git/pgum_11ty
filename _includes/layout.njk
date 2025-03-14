@@ -7,15 +7,36 @@ title: Potloodgum
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>{% if title %}{{ title }}{% else %}Potloodgum - Webdesign for Human Beings{% endif %}</title>
+    
+    {# Primary Meta Tags #}
+    <meta name="description" content="{% if description %}{{ description }}{% else %}Potloodgum - Tjerk Dijkstra, creating accessible and human-centered web design in Leeuwarden, Netherlands. Specializing in non-profit and social impact projects.{% endif %}">
+    <meta name="author" content="Tjerk Dijkstra">
+    <meta name="keywords" content="webdesign, human-centered design, accessible design, Leeuwarden, Netherlands, non-profit, social impact, Tjerk Dijkstra">
+    
+    {# Open Graph / Facebook #}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://potloodgum.com{{ page.url }}">
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}Potloodgum - Webdesign for Human Beings{% endif %}">
+    <meta property="og:description" content="{% if description %}{{ description }}{% else %}Potloodgum - Tjerk Dijkstra, creating accessible and human-centered web design in Leeuwarden, Netherlands. Specializing in non-profit and social impact projects.{% endif %}">
+    <meta property="og:image" content="/images/og.png">
+    
+    {# Twitter #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://potloodgum.com{{ page.url }}">
+    <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}Potloodgum - Webdesign for Human Beings{% endif %}">
+    <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}Potloodgum - Tjerk Dijkstra, creating accessible and human-centered web design in Leeuwarden, Netherlands. Specializing in non-profit and social impact projects.{% endif %}">
+    <meta name="twitter:image" content="/images/og.png">
+    
     <link rel="stylesheet" href="/bundle.css">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <meta property="og:image" content="/images/og.png" />
+    <link rel="canonical" href="https://potloodgum.com{{ page.url }}">
     <meta name="theme-color" content="#F4CDCD">
-    <meta name="description" content="Potloodgum - Tjerk Dijkstra, webdesign for human beings, Leeuwarden, Netherlands, open source, developer, designer">
+    
+    {# RSS Feed #}
+    <link rel="alternate" type="application/rss+xml" title="Potloodgum RSS Feed" href="/feed.xml">
   </head>
   <body>
-
     {{ content | safe }}
     {% include "partials/_footer.njk" %}
     <script src="/app.js" defer type="module"></script>
