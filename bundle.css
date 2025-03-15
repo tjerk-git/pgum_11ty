@@ -537,7 +537,7 @@ h1 a{
 
 /* About page styles */
 .bio {
-  background: var(--light-pink);
+  background: var(--pink);
   padding: 4rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
