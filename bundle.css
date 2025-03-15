@@ -546,7 +546,7 @@ h1 a{
 .bio h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
-  color: var(--black);
+  color:white;
 }
 
 .bio .summary {
