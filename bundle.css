@@ -412,20 +412,67 @@ h1 a{
 .pgum span {
   display: inline-block;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  z-index:0;
+  z-index: 0;
   color: var(--off-white);
+  opacity: 0;
+  animation: fadeInScale 0.5s ease forwards;
 }
 
-.pgum span:nth-child(1) { animation: fadeInScale 0.5s ease forwards 0.1s; }
-.pgum span:nth-child(2) { animation: fadeInScale 0.5s ease forwards 0.2s; }
-.pgum span:nth-child(3) { animation: fadeInScale 0.5s ease forwards 0.3s; }
-.pgum span:nth-child(4) { animation: fadeInScale 0.5s ease forwards 0.4s; }
-.pgum span:nth-child(5) { animation: fadeInScale 0.5s ease forwards 0.5s; }
-.pgum span:nth-child(6) { animation: fadeInScale 0.5s ease forwards 0.6s; }
-.pgum span:nth-child(7) { animation: fadeInScale 0.5s ease forwards 0.7s; }
-.pgum span:nth-child(8) { animation: fadeInScale 0.5s ease forwards 0.8s; }
-.pgum span:nth-child(9) { animation: fadeInScale 0.5s ease forwards 0.9s; }
-.pgum span:nth-child(10) { animation: fadeInScale 0.5s ease forwards 1s; }
+.pgum span:nth-child(1) { animation-delay: 0.1s; }
+.pgum span:nth-child(2) { animation-delay: 0.2s; }
+.pgum span:nth-child(3) { animation-delay: 0.3s; }
+.pgum span:nth-child(4) { animation-delay: 0.4s; }
+.pgum span:nth-child(5) { animation-delay: 0.5s; }
+.pgum span:nth-child(6) { animation-delay: 0.6s; }
+.pgum span:nth-child(7) { animation-delay: 0.7s; }
+.pgum span:nth-child(8) { animation-delay: 0.8s; }
+.pgum span:nth-child(9) { animation-delay: 0.9s; }
+.pgum span:nth-child(10) { animation-delay: 1s; }
+
+@keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    transform: rotate(-45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .subtitle{
   display:flex;
