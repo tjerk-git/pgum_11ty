@@ -571,7 +571,7 @@ h1 a{
 }
 
 .bio-actions a {
-  background-color: var(--pink);
+  background-color: var(--black);
   color: var(--off-white);
 }
 
