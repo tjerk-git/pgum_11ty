@@ -35,6 +35,8 @@ title: Potloodgum
 
     {# RSS Feed #}
     <link rel="alternate" type="application/rss+xml" title="Potloodgum RSS Feed" href="/feed.xml">
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ab28808f-e12c-4f00-a47d-c089d95031b3"></script>
   </head>
   <body>
     {{ content | safe }}
@@ -43,10 +45,7 @@ title: Potloodgum
     {% if page.url === "/about/" %}
     <script src="/js/profile-canvas.js" defer></script>
     {% endif %}
-    <script data-goatcounter="https://pgum.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-        <a title="Privacy-friendly Web Analytics" href="https://clicky.com/101481294"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
-<script async data-id="101481294" src="//static.getclicky.com/js"></script>
+
 
   </body>
 </html>
