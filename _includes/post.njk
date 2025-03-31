@@ -1,0 +1,19 @@
+---
+layout: layout.njk
+title: Potloodgum | Human-Centered Webdesign for Non-Profits
+description: Potloodgum creates accessible and impactful web design solutions for non-profit organizations and social causes in the Netherlands. View our latest projects and collaborations.
+---
+
+{% include "partials/_header.njk" %}
+
+<main>
+
+ <section class="post">
+    <div class="button-container">
+     <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}"></div>
+    </div>
+ {{ content | safe }}
+ </section>
+
+
+</main>

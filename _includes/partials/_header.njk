@@ -3,15 +3,15 @@
   <img src="/images/potloodgum.webp" alt="Potloodgum logo" class="logo">
   </a>
   <a href="" role="button" aria-label="menu" id="menu-button" class="menu-button">
-  MENU 
+  MENU
   </a>
 </header>
 
 {% set navItems = [
   { url: "/", label: "Projects", ariaLabel: "Projects" },
-  { url: "/now", label: "What I'm up to", ariaLabel: "Now" },
   { url: "/photography", label: "Photography", ariaLabel: "Photography" },
-  { url: "/about", label: "About", ariaLabel: "About" }
+  { url: "/about", label: "About", ariaLabel: "About" },
+  { url: "/lectures", label: "Lectures", ariaLabel: "Lectures" }
 ] %}
 
 <div class="menu-overlay">
@@ -29,7 +29,7 @@
           <a href="{{ item.url }}"
             aria-label="{{ item.ariaLabel }}"
             aria-roledescription="button"
-            
+
             {% if page.url == item.url %}aria-current="page"{% endif %}
             class="{% if item.url in page.url %}active{% endif %}">
             {{ item.label }}
@@ -37,11 +37,6 @@
         </li>
       {% endfor %}
 
-      <li>
-        <a href="mailto:hello@potloodgum.com" class="mail-link">
-          hello@potloodgum.com
-        </a>
-      </li>
     </ul>
   </nav>
 </div>
