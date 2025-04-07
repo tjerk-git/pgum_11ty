@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://potloodgum.com/sitemap.xml
+
+User-agent: *
+Disallow: /admin/

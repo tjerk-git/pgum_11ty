@@ -1,0 +1,68 @@
+---
+layout: layout.njk
+title: Blog | Potloodgum - Webdesign Insights and Case Studies
+description: Explore articles on accessible web design, case studies of non-profit projects, and insights on creating human-centered digital experiences.
+keywords: accessible web design blog, human-centered design articles, non-profit web design case studies, web accessibility tips, social impact web design
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+---
+{% include "partials/_header.njk" %}
+
+<main>
+  <section class="blog-header radius-top-left radius-top-right">
+    <h1>BLOG</h1>
+    <p>Thoughts on accessible and human-centered web design</p>
+  </section>
+
+  <section class="blog-list radius-bottom-left radius-bottom-right">
+    {% if collections.blog.length %}
+      <div class="blog-grid">
+        {% for post in pagination.items %}
+          <article class="blog-card">
+            <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <div class="blog-card-meta">
+              <time datetime="{{ post.date | dateIso }}">{{ post.date | readableDate }}</time>
+              {% if post.data.tags %}
+                <div class="tags">
+                  {% for tag in post.data.tags %}
+                    {% if tag != "blog" %}
+                      <span class="tag">{{ tag }}</span>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+            <p class="blog-card-excerpt">{{ post.data.excerpt }}</p>
+            <a href="{{ post.url }}" class="read-more">Read more</a>
+          </article>
+        {% endfor %}
+      </div>
+
+      {% if pagination.pages.length > 1 %}
+        <nav class="pagination" aria-label="Blog pagination">
+          <ul>
+            {% if pagination.href.previous %}
+              <li><a href="{{ pagination.href.previous }}" aria-label="Previous page">Previous</a></li>
+            {% endif %}
+            
+            {% for pageUrl in pagination.hrefs %}
+              <li>
+                <a href="{{ pageUrl }}" {% if pagination.page.url == pageUrl %}aria-current="page"{% endif %}>
+                  {{ loop.index }}
+                </a>
+              </li>
+            {% endfor %}
+            
+            {% if pagination.href.next %}
+              <li><a href="{{ pagination.href.next }}" aria-label="Next page">Next</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+      {% endif %}
+    {% else %}
+      <p class="no-posts">Blog posts coming soon. Stay tuned!</p>
+    {% endif %}
+  </section>
+</main>
