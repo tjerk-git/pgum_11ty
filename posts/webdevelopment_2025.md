@@ -146,7 +146,7 @@ Who cares about big-tech companies locking you in? CSS, HTML and Javascript will
 
 ### 2. Simplicity in building with A.I editors
 
-Sprinkle some A.I model in your editor and the autocomplete shoots you into coding hyperspace, you will get that Chapelle Roan fanpage running in no time.
+Sprinkle some A.I model in your editor and the autocomplete shoots you into coding hyperspace, you will get that Chappell Roan fanpage running in no time.
 
 I really like [Zed](https://zed.dev/)
 
