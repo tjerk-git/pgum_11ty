@@ -8,26 +8,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
-  // Date formatting filters for blog
+  // Date formatting filters
   eleventyConfig.addFilter("fromNow", (date) => {
     return moment(date).fromNow();
-  });
-  
-  eleventyConfig.addFilter("readableDate", (date) => {
-    return moment(date).format("MMMM D, YYYY");
-  });
-  
-  eleventyConfig.addFilter("dateIso", (date) => {
-    return moment(date).toISOString();
   });
 
   // Collections
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("posts/*.md");
-  });
-  
-  eleventyConfig.addCollection("blog", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("blog/*.md");
   });
 
   return {

@@ -906,196 +906,78 @@ footer a:hover {
     border: 0;
 }
 
-/* Blog Styles */
-.blog-header {
-  padding: 2rem;
-  text-align: center;
-  background-color: var(--cactus);
-  color: var(--black);
+.pswp-docs__home-gallery {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    position: relative;
+    width: 100%;
+}
+.pswp-docs__home-gallery-credit {
+    bottom: -21px;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item {
+    position: relative;
+}
+figure.pswp-docs__home-gallery-item {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#docusaurus-base-url-issue-banner-container,
+.pswp-docs__home-gallery-item figcaption,
+.theme-code-block--hidden {
+    display: none;
+}
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-.blog-header h1 {
-  margin-bottom: 0.5rem;
+.pswp-docs__home-gallery .pswp-docs__home-gallery-item a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
 }
-
-.blog-list {
-  padding: 2rem;
-  background-color: var(--white);
+.pswp-docs__home-gallery-example {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+.pswp-docs__home-gallery-example a {
+    display: block;
+    line-height: 0;
+    margin: 0 4px 4px 0;
+    position: relative;
 }
-
-@media (min-width: 768px) {
-  .blog-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.pswp-docs__home-gallery-example img {
+    left: 0;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
-
-.blog-card {
-  padding: 1.5rem;
-  border-radius: 8px;
-  background-color: var(--light-gray);
-  transition: transform 0.3s ease;
+.pswp-docs__home-block h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 70px auto 36px;
 }
-
-.blog-card:hover {
-  transform: translateY(-5px);
-}
-
-.blog-card h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-}
-
-.blog-card h2 a {
-  color: var(--black);
-  text-decoration: none;
-}
-
-.blog-card h2 a:hover {
-  text-decoration: underline;
-}
-
-.blog-card-meta {
-  margin: 0.5rem 0 1rem;
-  font-size: 0.9rem;
-  color: var(--dark-gray);
-}
-
-.blog-card-excerpt {
-  margin-bottom: 1rem;
-}
-
-.read-more {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--cactus);
-  color: var(--black);
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.read-more:hover {
-  background-color: var(--cactus-dark);
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.tag {
-  padding: 0.25rem 0.5rem;
-  background-color: var(--light-blue);
-  border-radius: 4px;
-  font-size: 0.8rem;
-}
-
-.pagination {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.pagination ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  gap: 0.5rem;
-}
-
-.pagination a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--light-gray);
-  color: var(--black);
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.pagination a[aria-current="page"] {
-  background-color: var(--cactus);
-  font-weight: bold;
-}
-
-/* Blog Post Styles */
-.blog-post {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: var(--white);
-}
-
-.blog-post-header {
-  margin-bottom: 2rem;
-}
-
-.blog-post-header h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
-}
-
-.blog-post-meta {
-  color: var(--dark-gray);
-}
-
-.blog-post-content {
-  line-height: 1.6;
-}
-
-.blog-post-content h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.blog-post-content p {
-  margin-bottom: 1.5rem;
-}
-
-.blog-post-content ul, 
-.blog-post-content ol {
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-.blog-post-content li {
-  margin-bottom: 0.5rem;
-}
-
-.blog-post-footer {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--light-gray);
-}
-
-.author-info {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.author-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.author-bio h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.author-bio p {
-  margin: 0;
-  font-size: 0.9rem;
+.pswp__dynamic-caption {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 @media (max-width: 768px) {
@@ -1241,78 +1123,4 @@ footer a:hover {
     .canvas-wrapper {
         max-width: 250px;
     }
-}
-
-.pswp-docs__home-gallery {
-    grid-gap: 10px;
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    position: relative;
-    width: 100%;
-}
-.pswp-docs__home-gallery-credit {
-    bottom: -21px;
-    font-size: 12px;
-    position: absolute;
-    right: 0;
-}
-.pswp-docs__home-gallery .pswp-docs__home-gallery-item {
-    position: relative;
-}
-figure.pswp-docs__home-gallery-item {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-#docusaurus-base-url-issue-banner-container,
-.pswp-docs__home-gallery-item figcaption,
-.theme-code-block--hidden {
-    display: none;
-}
-.pswp-docs__home-gallery .pswp-docs__home-gallery-item img {
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.pswp-docs__home-gallery .pswp-docs__home-gallery-item a {
-    display: block;
-    height: 100%;
-    overflow: hidden;
-    padding-bottom: 100%;
-    position: relative;
-    width: 100%;
-}
-.pswp-docs__home-gallery-example {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.pswp-docs__home-gallery-example a {
-    display: block;
-    line-height: 0;
-    margin: 0 4px 4px 0;
-    position: relative;
-}
-.pswp-docs__home-gallery-example img {
-    left: 0;
-    max-width: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.pswp-docs__home-block h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 70px auto 36px;
-}
-.pswp__dynamic-caption {
-    font-size: 14px;
-    line-height: 1.5;
 }
