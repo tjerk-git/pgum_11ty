@@ -36,7 +36,7 @@ Now there were the evil A.I ring of power comes in to screw this all up, and we 
 
 ---
 ## “Instead of a dark lord, you would have a queen!”
-![Galadriel going full ghost queen](https://i.imgur.com/RZz1Y0k.jpeg)
+![Galadriel going full ghost queen]()
 
 Design is a craft. You learn by doing. Iterating. Failing. Trying again.
 
@@ -54,7 +54,7 @@ Designers need to know *when to say no* to power. To resist the easy, polished o
 ---
 
 ## “I feel... thin. Sort of stretched, like butter scraped over too much bread.”
-![Old Bilbo looking haunted](https://i.imgur.com/kNl64Lz.jpeg)
+![Old Bilbo looking haunted]()
 
 Bilbo knew it. And I’ve seen it in students too — that twitchy vibe of someone who’s used A.I. for *everything*. Their brainstorms? Generated. Their color schemes? Suggested. Their portfolios? Polished by a chatbot. Their process? Just a series of prompts.
 
@@ -68,7 +68,7 @@ A.I. has made them invisible. Not in the cool ring-wraith way — more in the *I
 
 
 ## “All we have to decide is what to do with the tools that are given to us.”
-![Gandalf in Moria with Frodo](https://i.imgur.com/2MXY3km.jpeg)
+![Gandalf in Moria with Frodo]()
 
 That's a powerful and inspiring quote from J.R.R. Tolkien's The Lord of the Rings, spoken by Gandalf in The Fellowship of the Ring. It reminds us that while we may not control all the circumstances or resources we have, we do have the agency to choose how we use what we are given.
 
