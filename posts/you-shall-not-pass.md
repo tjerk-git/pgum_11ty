@@ -70,7 +70,7 @@ A.I. has made them invisible. Not in the cool ring-wraith way — more in the *I
 ## “All we have to decide is what to do with the tools that are given to us.”
 ![Gandalf in Moria with Frodo]()
 
-That's a powerful and inspiring quote from J.R.R. Tolkien's The Lord of the Rings, spoken by Gandalf in The Fellowship of the Ring. It reminds us that while we may not control all the circumstances or resources we have, we do have the agency to choose how we use what we are given.
+spoken by Gandalf in The Fellowship of the Ring. It reminds us that while we may not control all the circumstances or resources we have, we do have the agency to choose how we use what we are given.
 
 Be very very critical of the use, get comfortable with being uncomfortable.
 
@@ -78,7 +78,13 @@ I am not anti A.I, who would be, thats crazy, its here we have to deal with it. 
 As Miyazaki said, "Whenever someone creates something with all of their heart, then that creation is given a soul."
 When he was shown some A.I generated experiments he said: "I strongly feel that this is an insult to life itself."
 
+![Myazaki meme 1](/images/blogposts/you-shall-not-pass/1.jpg)
+
 
 ## SOURCES
 
 -  "How to Be a Design Student (and How to Teach Them)"
+
+
+
+![Myazaki meme 2](/images/blogposts/you-shall-not-pass/2.jpg)
