@@ -1067,10 +1067,6 @@ figure.pswp-docs__home-gallery-item {
         max-width: none;
     }
 
-    .subtitle span:last-child {
-        font-size: 1rem;
-    }
-
     .playlist__item {
         flex-direction: column;
         gap: 1rem;
