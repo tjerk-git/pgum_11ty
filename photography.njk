@@ -26,6 +26,19 @@ keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuward
   }
 }
 
+
+#toggleButton{
+    padding: 1rem;
+    background-color: var(--black);
+    color: var(--off-white);
+    border-radius: 10px;
+    text-decoration: none;
+    position:fixed;
+    top:10rem;
+    left:3rem;
+    z-index:100;
+}
+
 .photo-toggle {
     position: relative;
     display: inline-block;
@@ -65,7 +78,7 @@ keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuward
             <h1>PHOTOGRAPHY</h1>
             <p class="visually-hidden">A collection of photographs by Tjerk Dijkstra</p>
             <button id="toggleButton" data-state="images" style="margin-top:1rem;">
-            Toon alt-tekst
+            show only text
             </button>
 
         </div>
@@ -173,10 +186,10 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     // Toggle state and button label
     if (state === "images") {
         button.setAttribute("data-state", "alt");
-        button.textContent = "Toon foto's";
+        button.textContent = "show images";
     } else {
         button.setAttribute("data-state", "images");
-        button.textContent = "Toon alt-tekst";
+        button.textContent = "show only text";
     }
 });
 </script>
