@@ -6,347 +6,177 @@ keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuward
 ---
 {% include "partials/_header.njk" %}
 
+<style>
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .photos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .photos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.photo-toggle {
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    width: auto;
+}
+
+.photo-toggle img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0.5rem solid white;
+}
+
+.photo-toggle .alt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #f5f5f5;
+    color: #333;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+</style>
+
 <main>
     <section class="playlist radius-top-left radius-top-right" style="padding:1rem;">
         <div class="playlist__header">
-              <h1>PHOTOGRAPHY</h1>
-              <p class="visually-hidden">A collection of photographs by Tjerk Dijkstra</p>
-        </div>
-
-        <div class="pswp-docs__home-gallery" id="gallery--header-home" aria-label="Photography gallery">
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/13.webp"
-                   data-pswp-width="1512"
-                   data-pswp-height="2016"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size street photography image">
-                    <img src="/images/photos/13.webp"
-                         alt="Urban street scene with dramatic lighting"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/02.webp"
-                   data-pswp-width="1512"
-                   data-pswp-height="1512"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size architectural photograph">
-                    <img src="/images/photos/02.webp"
-                         alt="Modern architectural detail with geometric patterns"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/03.webp"
-                   data-pswp-width="1037"
-                   data-pswp-height="1037"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size landscape photograph">
-                    <img src="/images/photos/03.webp"
-                         alt="Serene landscape with rolling hills and misty atmosphere"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/01.webp"
-                   data-pswp-width="1475"
-                   data-pswp-height="1472"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size portrait photograph">
-                    <img src="/images/photos/01.webp"
-                         alt="Intimate portrait with warm and natural lighting"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/04.webp"
-                   data-pswp-width="1565"
-                   data-pswp-height="1037"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size still life photograph">
-                    <img src="/images/photos/04.webp"
-                         alt="Vibrant still life with colorful flowers and vintage objects"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/16.webp"
-                   data-pswp-width="512"
-                   data-pswp-height="768"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size wildlife photograph">
-                    <img src="/images/photos/16.webp"
-                         alt="Majestic wildlife scene with birds in flight"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/05.webp"
-                   data-pswp-width="1512"
-                   data-pswp-height="1512"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size abstract photograph">
-                    <img src="/images/photos/05.webp"
-                         alt="Abstract composition with geometric shapes and bold colors"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/06.webp"
-                   data-pswp-width="1564"
-                   data-pswp-height="1037"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size cityscape photograph">
-                    <img src="/images/photos/06.webp"
-                         alt="Panoramic cityscape with modern skyscrapers and bustling streets"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/07.webp"
-                   data-pswp-width="3000"
-                   data-pswp-height="2000"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size seascape photograph">
-                    <img src="/images/photos/07.webp"
-                         alt="Serenity seascape with calm waters and distant horizon"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/08.webp"
-                   data-pswp-width="3000"
-                   data-pswp-height="2000"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size mountain landscape photograph">
-                    <img src="/images/photos/08.webp"
-                         alt="Breathtaking mountain landscape with snow-capped peaks and serene lake"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/09.webp"
-                   data-pswp-width="3000"
-                   data-pswp-height="2000"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size sunset photograph">
-                    <img src="/images/photos/09.webp"
-                         alt="Vibrant sunset with warm colors and silhouetted trees"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/10.webp"
-                   data-pswp-width="1512"
-                   data-pswp-height="2016"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size night photography image">
-                    <img src="/images/photos/10.webp"
-                         alt="Urban night scene with neon lights and bustling streets"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/11.webp"
-                   data-pswp-width="2856"
-                   data-pswp-height="2142"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size macro photograph">
-                    <img src="/images/photos/11.webp"
-                         alt="Intricate macro shot of a flower with delicate details"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/12.webp"
-                   data-pswp-width="2856"
-                   data-pswp-height="2142"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size aerial photograph">
-                    <img src="/images/photos/12.webp"
-                         alt="Breathtaking aerial view of a city with modern architecture"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/14.webp"
-                   data-pswp-width="2016"
-                   data-pswp-height="1512"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size documentary photograph">
-                    <img src="/images/photos/14.webp"
-                         alt="Emotive documentary shot of a person with a powerful story"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/15.webp"
-                   data-pswp-width="512"
-                   data-pswp-height="768"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size fine art photograph">
-                    <img src="/images/photos/15.webp"
-                         alt="Creative fine art composition with bold colors and textures"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/17.webp"
-                   data-pswp-width="1260"
-                   data-pswp-height="840"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size sports photograph">
-                    <img src="/images/photos/17.webp"
-                         alt="Action-packed sports shot with athletes in motion"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/18.webp"
-                   data-pswp-width="1260"
-                   data-pswp-height="840"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size travel photograph">
-                    <img src="/images/photos/18.webp"
-                         alt="Vibrant travel shot of a bustling market with exotic goods"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/19.webp"
-                   data-pswp-width="2208"
-                   data-pswp-height="1472"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size food photograph">
-                    <img src="/images/photos/19.webp"
-                         alt="Appetizing food shot with fresh ingredients and culinary delights"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-            <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/20.webp"
-                   data-pswp-width="2208"
-                   data-pswp-height="1472"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size product photograph">
-                    <img src="/images/photos/20.webp"
-                         alt="High-quality product shot with detailed textures and lighting"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
-
-             <figure class="pswp-docs__home-gallery-item">
-                <a style="padding-bottom:100%"
-                   href="/images/photos/21.webp"
-                   data-pswp-width="3204"
-                   data-pswp-height="4032"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-cropped="true"
-                   aria-label="View full size product photograph">
-                    <img src="/images/photos/21.webp"
-                         alt="Man struggeling with ticket machine"
-                         loading="lazy"
-                         sizes="(min-width: 1124px) 524px, 50vw">
-                </a>
-            </figure>
+            <h1>PHOTOGRAPHY</h1>
+            <p class="visually-hidden">A collection of photographs by Tjerk Dijkstra</p>
+            <button id="toggleButton" data-state="images" style="margin-top:1rem;">
+            Toon alt-tekst
+            </button>
 
         </div>
 
-        <!-- PhotoSwipe JS and CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.3.8/dist/photoswipe.css">
-        <script type="module">
-            import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5.3.8/dist/photoswipe-lightbox.esm.js'
-            import PhotoSwipe from 'https://unpkg.com/photoswipe@5.3.8/dist/photoswipe.esm.js'
+        <section class="photos">
+        <figure class="photo-toggle">
+            <img src="/images/photos/1.jpeg" alt="Black and white picture of laundry hanging on a washing line the clouds have summer pattern and the picture is taken from a low angle, the clothes seem to be from a older gentleman. It almost appears that some clothes are floating in the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
 
-            const lightbox = new PhotoSwipeLightbox({
-                gallery: '#gallery--header-home',
-                children: 'a',
-                pswpModule: PhotoSwipe
-            });
+        <figure class="photo-toggle">
+            <img src="/images/photos/2.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
 
-            lightbox.init();
-        </script>
+        <figure class="photo-toggle">
+            <img src="/images/photos/3.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/4.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/5.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/6.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/8.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+                <figure class="photo-toggle">
+            <img src="/images/photos/7.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/9.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/10.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/11.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/12.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/13.jpeg" alt="Grainy black and white picture of a tree and two doves seeming to run away from something that happened, taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/14.jpeg" alt="Grainy black and white picture of a tree and two doves seeming to run away from something that happened, taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+        </section>
+
+
     </section>
-
 </main>
+
+
+<script>
+document.getElementById("toggleButton").addEventListener("click", function () {
+    const button = this;
+    const state = button.getAttribute("data-state");
+
+    document.querySelectorAll(".photo-toggle").forEach(function (figure) {
+        const img = figure.querySelector("img");
+        const overlay = figure.querySelector(".alt-overlay");
+
+        if (state === "images") {
+            // Switch to alt text
+            overlay.textContent = img.alt;
+            overlay.style.display = "flex";
+            img.style.visibility = "hidden";
+        } else {
+            // Switch back to images
+            overlay.style.display = "none";
+            img.style.visibility = "visible";
+        }
+    });
+
+    // Toggle state and button label
+    if (state === "images") {
+        button.setAttribute("data-state", "alt");
+        button.textContent = "Toon foto's";
+    } else {
+        button.setAttribute("data-state", "images");
+        button.textContent = "Toon alt-tekst";
+    }
+});
+</script>
