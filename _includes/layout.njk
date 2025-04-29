@@ -12,7 +12,7 @@ title: Potloodgum
     {# Primary Meta Tags #}
     <meta name="description" content="{% if description %}{{ description }}{% else %}Potloodgum - Tjerk Dijkstra, creating accessible and human-centered web design in Leeuwarden, Netherlands. Specializing in non-profit and social impact projects.{% endif %}">
     <meta name="author" content="Tjerk Jippe Dijkstra">
-    <meta name="keywords" content="webdesign, human-centered design, accessible design, Leeuwarden, Netherlands, non-profit, social impact, Tjerk Dijkstra, Tjerk Jippe Dijkstra">
+    <meta name="keywords" content="{% if keywords %}{{ keywords }}{% else %}webdesign, human-centered design, accessible design, Leeuwarden, Netherlands, non-profit, social impact, Tjerk Dijkstra, Tjerk Jippe Dijkstra{% endif %}">
 
     {# Open Graph #}
     <meta property="og:type" content="website">
@@ -27,6 +27,59 @@ title: Potloodgum
     <link rel="canonical" href="https://potloodgum.com{{ page.url }}">
     <meta name="theme-color" content="#F4CDCD">
 
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}Potloodgum - Webdesign for Human Beings{% endif %}">
+    <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}Potloodgum - Tjerk Dijkstra, creating accessible and human-centered web design in Leeuwarden, Netherlands. Specializing in non-profit and social impact projects.{% endif %}">
+    <meta name="twitter:image" content="https://potloodgum.com/images/og.png">
+
+    <!-- Preconnect to External Domains -->
+    <link rel="preconnect" href="https://cloud.umami.is">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Potloodgum",
+      "description": "Human-centered webdesign for non-profits and social causes in the Netherlands",
+      "image": "https://potloodgum.com/images/potloodgum.webp",
+      "url": "https://potloodgum.com",
+      "email": "hello@potloodgum.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Leeuwarden",
+        "addressRegion": "Friesland",
+        "addressCountry": "Netherlands"
+      },
+      "priceRange": "$$",
+      "founder": {
+        "@type": "Person",
+        "name": "Tjerk Jippe Dijkstra"
+      },
+      "sameAs": [
+        "https://github.com/tjerk-git",
+        "https://mastodon.design/@potloodgum"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data for Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tjerk Jippe Dijkstra",
+      "jobTitle": "Web Designer & Developer, Lecturer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "NHL Stenden University of Applied Sciences"
+      },
+      "url": "https://potloodgum.com/about/",
+      "image": "https://potloodgum.com/images/tjerk-dijkstra.jpg"
+    }
+    </script>
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ab28808f-e12c-4f00-a47d-c089d95031b3"></script>
     <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_442dfa5ff6419414d8f9085017c50e"></script>
