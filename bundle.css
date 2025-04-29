@@ -638,7 +638,6 @@ h1 a {
 
 .subtitle span:last-child {
     transform: rotate(0deg);
-    font-size: 1.5rem;
 }
 
 @keyframes tiltFirst {
@@ -1082,10 +1081,6 @@ figure.pswp-docs__home-gallery-item {
 
     .subtitle {
         font-size: 2rem;
-    }
-
-    .subtitle span:last-child {
-        font-size: 0.7rem;
     }
 
     .pgum {
