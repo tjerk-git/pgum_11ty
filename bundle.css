@@ -801,7 +801,6 @@ section p {
 .name {
     color: var(--dark-purple);
     font-size: 5rem;
-    font-weight: bold;
 }
 
 footer {
