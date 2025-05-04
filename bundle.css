@@ -284,6 +284,7 @@ header {
     border-radius: 10px;
     margin: 0 auto;
     line-height: 1.6;
+    font-family: "Georgia", "Times New Roman", serif;
 }
 
 .post h1 {
