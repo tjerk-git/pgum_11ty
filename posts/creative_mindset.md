@@ -1,6 +1,10 @@
+---
+title: "Creative mindset in the age of distractions"
+date: 2025-03-31
+layout: post
+---
 
-
-# Developing a creative mindset in an age of distractions
+# Creative mindset in the age of distractions
 
 In this lecture I will be talking about all the self-help books I read. Some were about creativity, some were about changing your life, some were about finding purpose. Apparently these are the subjects that interest me. But also have a clear link in how to become a good design student.
 Some of these books were actually meta-analyses on all self-help books.
