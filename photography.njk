@@ -1,0 +1,195 @@
+---
+layout: layout.njk
+title: Photography Portfolio | Tjerk Dijkstra - Potloodgum
+description: Explore Tjerk Dijkstra's photography portfolio showcasing a collection of artistic and creative photographs captured in various styles and settings.
+keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuwarden photographer, artistic photography portfolio, visual storytelling
+---
+{% include "partials/_header.njk" %}
+
+<style>
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .photos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .photos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+
+#toggleButton{
+    padding: 1rem;
+    background-color: var(--black);
+    color: var(--off-white);
+    border-radius: 10px;
+    text-decoration: none;
+    position:fixed;
+    top:10rem;
+    left:3rem;
+    z-index:100;
+}
+
+.photo-toggle {
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    width: auto;
+}
+
+.photo-toggle img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0.5rem solid white;
+}
+
+.photo-toggle .alt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #f5f5f5;
+    color: #333;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+</style>
+
+<main>
+    <section class="playlist radius-top-left radius-top-right" style="padding:1rem;">
+        <div class="playlist__header">
+            <h1>PHOTOGRAPHY</h1>
+            <p class="visually-hidden">A collection of photographs by Tjerk Dijkstra</p>
+            <button id="toggleButton" data-state="images" style="margin-top:1rem;">
+            show only text
+            </button>
+
+        </div>
+
+        <section class="photos">
+        <figure class="photo-toggle">
+            <img src="/images/photos/1.jpeg" alt="Black and white picture of laundry hanging on a washing line the clouds have summer pattern and the picture is taken from a low angle, the clothes seem to be from a older gentleman. It almost appears that some clothes are floating in the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/2.jpeg" alt="Grainy black and white picture of a a tree and two doves seeming to run away from something that happend, its taken from the perspective of a human looking up at the sky.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/3.jpeg" alt="A frozen lake in Finland, washed out blue and white colors. A person wearing a yellow jacket is taking a picture of the lake.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/4.jpeg" alt="A big rocky cliff in Portugal, one wave is hitting the rock, you can see the outline of the coast. One fisherman is standing on the cliffside, he is far away and seems small. Clouds are stretching far, it seems warm but cold.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/5.jpeg" alt="High contrast picture taken from a low angle, you see a rope and a person seems to be rappeling down. The person is frame by dark leaves from the tree.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/6.jpeg" alt="Black and white picture of a window that shows many trees with a small layer of white snow, there are many branches each covered with a thin layer of white snow, there a plants at the innerside of the window">
+            <div class="alt-overlay"></div>
+        </figure>
+
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/8.jpeg" alt="A high contrast picture of a woman standing in the North Sea in low water, the water reaches her ankles. She seems to be one silloette. Her clothes seems to be matching the wavy pattens of the water. She is looking at the person taking the picture. The sea stretches far, and the horizon is flat and almost infinite.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+                <figure class="photo-toggle">
+            <img src="/images/photos/7.jpeg" alt="A black and white picture of a reflection of a dock in the water, the water distorts and ripples the reflection. It almost looks like a giant rock surface.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/9.jpeg" alt="A picture taken from a fast moving car, green mountains are passing by. In the middle there seems to be a steam cloud. The foreground seems to be a high grass of diffrent colours, blurred by the speed of the car.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/10.jpeg" alt="A black and white landscape photo of a lonely tower standing at the end of the road, there are some animals grazing around it, clouds seem to be stretching far. The road seems gravel and barely used.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/11.jpeg" alt="A black and white portrait picture of a female face looking at the camera, only her eyes and hair are visible. The bottom-middle of picture seems to be torn or underdeveloped, her eyes are looking directly at the lens of the camera.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/12.jpeg" alt="A landscape picture of a dyke, long and flat, but taken askew the horizon seems to be going up. A small silhouette of a person walking is in the middle of the photo. The sky contains a fingerprint, a remainder of the development process. ">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/13.jpeg" alt="A black and white and grainy picture of reeds, only one fluffy reed seems to be in focus. In the background there a many blurry stems.">
+            <div class="alt-overlay"></div>
+        </figure>
+
+        <figure class="photo-toggle">
+            <img src="/images/photos/14.jpeg" alt="A picture of a red lightbeam traveling along a road. The road is clearly marked with white paint. In the far distance there is a small streetlight. The red laser light seems to brighten the picture with red neon colors.">
+            <div class="alt-overlay"></div>
+        </figure>
+        </section>
+
+
+    </section>
+</main>
+
+
+<script>
+document.getElementById("toggleButton").addEventListener("click", function () {
+    const button = this;
+    const state = button.getAttribute("data-state");
+
+    document.querySelectorAll(".photo-toggle").forEach(function (figure) {
+        const img = figure.querySelector("img");
+        const overlay = figure.querySelector(".alt-overlay");
+
+        if (state === "images") {
+            // Switch to alt text
+            overlay.textContent = img.alt;
+            overlay.style.display = "flex";
+            img.style.visibility = "hidden";
+        } else {
+            // Switch back to images
+            overlay.style.display = "none";
+            img.style.visibility = "visible";
+        }
+    });
+
+    // Toggle state and button label
+    if (state === "images") {
+        button.setAttribute("data-state", "alt");
+        button.textContent = "show images";
+    } else {
+        button.setAttribute("data-state", "images");
+        button.textContent = "show only text";
+    }
+});
+</script>
