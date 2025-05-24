@@ -47,7 +47,7 @@ keywords: human-centered webdesign, accessible web design Netherlands, non-profi
         <h2 class="sunk">Lectures</h2>
         <section class="color-blue">
             <div class="content-wrapper-sunk">
-                {% for post in collections.posts %}
+                {% for post in collections.posts | reverse %}
                     <a href="{{ post.url }}" class="event">
                         <div class="event-info">
                             <h3>{{ post.data.title }}</h3>
