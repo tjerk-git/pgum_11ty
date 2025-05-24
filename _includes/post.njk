@@ -5,19 +5,18 @@ description: Potloodgum creates accessible and impactful web design solutions fo
 ---
 
 {% include "partials/_header.njk" %}
-
-<main>
-
- <section class="post">
-    <div class="button-container">
-     <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}"></div>
-    </div>
- {{ content | safe }}
-
-     <div class="button-container">
-     <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}"></div>
-    </div>
- </section>
-
-
-</main>
+<nav>
+   <ul>
+      <li><a href="/">Back to posts</a></li>
+   </ul>
+</nav>
+<section class="color-white">
+   <div class="content-wrapper-sunk">
+      <article>
+         {{ content | safe }}
+         <div class="button-container">
+            <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}"></div>
+         </div>
+      </article>
+   </div>
+</section>

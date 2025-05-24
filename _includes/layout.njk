@@ -88,8 +88,5 @@ title: Potloodgum
     {{ content | safe }}
     {% include "partials/_footer.njk" %}
     <script src="/app.js" defer type="module"></script>
-    {% if page.url === "/about/" %}
-    <script src="/js/profile-canvas.js" defer></script>
-    {% endif %}
   </body>
 </html>

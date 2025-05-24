@@ -18,6 +18,11 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("posts/*.md");
   });
 
+  eleventyConfig.addCollection("projects", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("projects/*.md");
+  });
+
+
   return {
     dir: {
       input: ".",

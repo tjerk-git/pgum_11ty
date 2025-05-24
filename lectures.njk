@@ -5,29 +5,3 @@ description: Potloodgum creates accessible and impactful web design solutions fo
 ---
 
 {% include "partials/_header.njk" %}
-
-<main>
-<section class="playlist radius-top-left radius-top-right">
-    <div class="playlist__header">
-          <h1>Lectures</h1>
-    </div>
-
-    <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 16px; text-align: left; color: white;">
-      <thead>
-        <tr style="background-color: #000;">
-          <th style="padding: 10px; border-bottom: 2px solid #ccc;">Title</th>
-          <th style="padding: 10px; border-bottom: 2px solid #ccc;">Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for post in collections.posts %}
-          <tr style="background-color: {% if loop.index % 2 == 0 %}#333{% else %}#555{% endif %}; border-bottom: 1px solid #eee;">
-            <td style="padding: 10px;"><a href="{{ post.url }}" style="color: white; text-decoration: none;">{{ post.data.title }}</a></td>
-            <td style="padding: 10px;">{{ post.data.date | fromNow }}</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-
-</section>
-</main>

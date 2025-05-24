@@ -1,21 +1,38 @@
-const menuButton = document.querySelector('#menu-button');
-const closeButton = document.querySelector('#close-menu');
-const menuOverlay = document.querySelector('.menu-overlay');
+const thebigboi = document.querySelector('.giant-title-boi');
+let lastScrollY = 0;
 
-menuButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    menuOverlay.classList.add('open');
+// Scramble text on page load
+window.addEventListener('load', () => {
+    const text = thebigboi.innerText;
+    const scrambled = text.split('').sort(() => Math.random() - 0.5).join('');
+    thebigboi.innerText = scrambled;
+    
+    setTimeout(() => {
+        thebigboi.innerText = 'POTLOODGUM';
+    }, 2000);
 });
 
-closeButton.addEventListener('click', () => {
-    menuOverlay.classList.remove('open');
+window.addEventListener('scroll', () => {
+
+    if (window.scrollY >= lastScrollY + 30) {
+        const text = thebigboi.innerText;
+        const scrambled = text.split('').sort(() => Math.random() - 0.5).join('');
+        thebigboi.innerText = scrambled;
+        
+        setTimeout(() => {
+            thebigboi.innerHTML = `POTLOODGUM`;
+            lastScrollY = 0;
+        }, 5000);
+
+        lastScrollY = window.scrollY;
+    }
 });
 
-// if you click on a link, close the menu
-const menuLinks = document.querySelectorAll('.menu-overlay nav li a');
-menuLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-        menuOverlay.classList.remove('open');
-    });
+thebigboi.addEventListener('click', () => {
+    const text = thebigboi.innerText;
+    if (text === 'POTLOODGUM') {
+        thebigboi.innerText = 'GUMPOTLOOD';
+    } else {
+        thebigboi.innerText = 'POTLOODGUM';
+    }
 });
-

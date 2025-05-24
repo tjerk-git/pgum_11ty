@@ -4,70 +4,141 @@ title: Potloodgum | Human-Centered Webdesign for Non-Profits
 description: Potloodgum creates accessible and impactful web design solutions for non-profit organizations and social causes in the Netherlands. View our latest projects and collaborations.
 keywords: human-centered webdesign, accessible web design Netherlands, non-profit website designer Leeuwarden, social impact web development, Tjerk Dijkstra web designer
 ---
+
 {% include "partials/_header.njk" %}
-
-<main>
-    <section class="why radius-top-left radius-top-right">
-        <h1 class="pgum"><span>P</span><span>O</span><span>T</span><span>L</span><span>O</span><span>O</span><span>D</span><span>G</span><span>U</span><span>M</span></h1>
-        
-        <div class="subtitle">
-            <span>WEBDESIGN</span>
-            <span>FOR</span>
-            <span>HUMAN</span>
-            <span>BEINGS*</span>
+<div class="content-wrapper">
+    <div class="introduction-container">
+        <p>Hi, Potloodgum is a design studio run by Tjerk Jippe Dijkstra.</p>
+        <p>I teach UX/UI, Design Research and Web development at NHL Stenden at a Bachelors Design School called CMDLWD.</p>
+        <p>I like helping people by making easy, fun and quircky
+            <span class="highlight-marker">web applications</span>
+            for them. Like an automatic photobooth for a wedding or a website that generates fun design challenges for students
+            at
+            <a href="https://sprint.cards">sprint.cards</a>, or bookable timeslot tool called
+            <a href="https://hamaki.pro">Hamaki</a>.
+        </p>
+        <p>Yeah, too many side
+            <span class="highlight-marker">projects</span>
+            and some analog
+            <span class="highlight-marker">photography.</span>
+        </p>
+        <p>Have fun, check out my stuff, and if you want to reach me:
+            <a href="hello@potloodgum.com">hello@potloodgum.com!</a>
         </div>
-        <span>*I only work for non profit organisations and good causes</span>
-    </section>
-
-    <section class="playlist radius-bottom-left radius-bottom-right">
-        <h2 class="visually-hidden">Recent Projects</h2>
-        <table class="playlist-table" aria-label="List of recent projects and collaborations">
-            <thead>
-                <tr>
-                    <th scope="col">Project</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Description</th>
-                    <th scope="col"><span class="visually-hidden">Link to project</span></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="wes-blue-dark">
-                    <th scope="row">WE DESIGN THE WORLD FESTIVAL</th>
-                    <td>MAR 2025</td>
-                    <td>FESTIVAL FOR DESIGN IN THE NORTH</td>
-                    <td><a href="https://wdtw.nl" target="_blank" class="button-link" rel="noopener noreferrer" aria-label="Visit We Design The World Festival website">CHECK</a></td>
-                </tr>
-                <tr class="red-dark">
-                    <th scope="row">ROELOF SCHIPPER</th>
-                    <td>JAN 2025</td>
-                    <td>AUTHOR</td>
-                    <td><a href="https://roelofschipper.nl" target="_blank" class="button-link" rel="noopener noreferrer" aria-label="Visit Roelof Schipper's website">CHECK</a></td>
-                </tr>
-                <tr class="cactus">
-                    <th scope="row">TIENSKIP</th>
-                    <td>JUNI 2024</td>
-                    <td>DEMOCRATIE VOOR JONGEREN</td>
-                    <td><a href="https://tienskip.frl" target="_blank" class="button-link" rel="noopener noreferrer" aria-label="Visit Tienskip website">CHECK</a></td>
-                </tr>
-                <tr class="black">
-                    <th scope="row">KIJKGAT</th>
-                    <td>MEI 2024</td>
-                    <td>ZIE WAT JE NOOIT ZAG</td>
-                    <td><a href="https://kijkgat.com" target="_blank" class="button-link" rel="noopener noreferrer" aria-label="Visit Kijkgat website">CHECK</a></td>
-                </tr>
-                <tr class="blurple">
-                    <th scope="row">HAMAKI</th>
-                    <td>MEI 2024</td>
-                    <td>MEETINGS MADE EASY</td>
-                    <td><a href="https://hamaki.pro" target="_blank" class="button-link" rel="noopener noreferrer" aria-label="Visit Hamaki website">CHECK</a></td>
-                </tr>
-                <tr class="taxi">
-                    <th scope="row">DESIGN CHALLENGE GENERATOR</th>
-                    <td>JUNI 2023</td>
-                    <td>CREATE DESIGN FUN CHALLENGES</td>
-                    <td><a href="https://sprint.cards" target="_blank" class="button-link" rel="noopener noreferrer" aria-label="Visit Design Challenge Generator website">CHECK</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-</main>
+        <div class="scroll-container">
+            <img class="scroll" src="/images/scroll.png" alt="scroll down image"></div>
+        </div>
+        <h2 class="sunk">Projects</h2>
+        <section class="color-pink-light">
+            <div class="content-wrapper-sunk">
+                <div class="trading-cards">
+                    {% for project in collections.projects %}
+                        <div class="card">
+                            <h3>{{ project.data.title }}</h3>
+                            <div class="{{ project.data.shape }}"></div>
+                            <div class="card-footer">
+                                visit the
+                                <a href="{{ project.data.url }}">website</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <h2 class="sunk">Lectures</h2>
+        <section class="color-blue">
+            <div class="content-wrapper-sunk">
+                {% for post in collections.posts %}
+                    <a href="{{ post.url }}" class="event">
+                        <div class="event-info">
+                            <h3>{{ post.data.title }}</h3>
+                            <p>{{ post.data.date | fromNow }}</p>
+                        </div>
+                        <div class="event-action">&gt;&gt;</div>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+        <h2 class="sunk">Photography</h2>
+        <section class="color-purple">
+            <div class="content-wrapper-sunk">
+                <div class="images-container">
+                    <figure>
+                        <img src="/images/photos/1.jpeg" alt="">
+                            <figcaption>Black and white picture of laundry hanging on a washing line the clouds have summer pattern and the picture
+                                is taken from a low angle, the clothes seem to be from a older gentleman. It almost appears that some clothes are
+                                floating in the sky.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/images/photos/2.jpeg" alt="">
+                                <figcaption>Grainy black and white picture of a a tree and two doves seeming to run away from something that happend,
+                                    its taken from the perspective of a human looking up at the sky.</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="/images/photos/3.jpeg" alt="">
+                                    <figcaption>A frozen lake in Finland, washed out blue and white colors. A person wearing a yellow jacket is taking a
+                                        picture of the lake.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/images/photos/4.jpeg" alt="">
+                                        <figcaption>A big rocky cliff in Portugal, one wave is hitting the rock, you can see the outline of the coast. One
+                                            fisherman is standing on the cliffside, he is far away and seems small. Clouds are stretching far, it seems warm but
+                                            cold.</figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="/images/photos/5.jpeg" alt="">
+                                            <figcaption>High contrast picture taken from a low angle, you see a rope and a person seems to be rappeling down. The
+                                                person is frame by dark leaves from the tree.</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="/images/photos/6.jpeg" alt="">
+                                                <figcaption>A high contrast picture of a woman standing in the North Sea in low water, the water reaches her ankles. She
+                                                    seems to be one silloette. Her clothes seems to be matching the wavy pattens of the water. She is looking at the person
+                                                    taking the picture. The sea stretches far, and the horizon is flat and almost infinite.</figcaption>
+                                            </figure>
+                                            <figure>
+                                                <img src="/images/photos/8.jpeg" alt="">
+                                                    <figcaption>A black and white picture of a reflection of a dock in the water, the water distorts and ripples the
+                                                        reflection. It almost looks like a giant rock surface.</figcaption>
+                                                </figure>
+                                                <figure>
+                                                    <img src="/images/photos/7.jpeg" alt="">
+                                                        <figcaption>A picture taken from a fast moving car, green mountains are passing by. In the middle there seems to be a
+                                                            steam cloud. The foreground seems to be a high grass of diffrent colours, blurred by the speed of the car.</figcaption>
+                                                    </figure>
+                                                    <figure>
+                                                        <img src="/images/photos/9.jpeg" alt="">
+                                                            <figcaption>A black and white landscape photo of a lonely tower standing at the end of the road, there are some animals
+                                                                grazing around it, clouds seem to be stretching far. The road seems gravel and barely used.</figcaption>
+                                                        </figure>
+                                                        <figure>
+                                                            <img src="/images/photos/10.jpeg" alt="">
+                                                                <figcaption>A black and white landscape photo of a lonely tower standing at the end of the road, there are some animals
+                                                                    grazing around it, clouds seem to be stretching far. The road seems gravel and barely used.</figcaption>
+                                                            </figure>
+                                                            <figure>
+                                                                <img src="/images/photos/11.jpeg" alt="">
+                                                                    <figcaption>A black and white portrait picture of a female face looking at the camera, only her eyes and hair are
+                                                                        visible. The bottom-middle of picture seems to be torn or underdeveloped, her eyes are looking directly at the lens of
+                                                                        the camera.</figcaption>
+                                                                </figure>
+                                                                <figure>
+                                                                    <img src="/images/photos/12.jpeg" alt="">
+                                                                        <figcaption>A landscape picture of a dyke, long and flat, but taken askew the horizon seems to be going up. A small
+                                                                            silhouette of a person walking is in the middle of the photo. The sky contains a fingerprint, a remainder of the
+                                                                            development process.</figcaption>
+                                                                    </figure>
+                                                                    <figure>
+                                                                        <img src="/images/photos/13.jpeg" alt="">
+                                                                            <figcaption>A black and white and grainy picture of reeds, only one fluffy reed seems to be in focus. In the background
+                                                                                there a many blurry stems.</figcaption>
+                                                                        </figure>
+                                                                        <figure>
+                                                                            <img src="/images/photos/14.jpeg" alt="">
+                                                                                <figcaption>A picture of a red lightbeam traveling along a road. The road is clearly marked with white paint. In the far
+                                                                                    distance there is a small streetlight. The red laser light seems to brighten the picture with red neon colors.</figcaption>
+                                                                            </figure>
+                                                                        </div>
+                                                                        <p>All shot on film using a Ricoh Super KR II and various film stocks</p>
+                                                                    </div>
+                                                                </section>
