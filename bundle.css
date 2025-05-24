@@ -129,11 +129,17 @@ img {
 
 .images-container {
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
 }
 
 figure {
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -345,7 +351,6 @@ hr {
     /* control the position */
 
     height: 200px;
-    aspect-ratio: 3/2;
     border-radius: var(--r);
     --_m: var(--r), #000 calc(100% - 1px), #0000;
     --_d: (var(--s) + var(--r))*cos(var(--a));
@@ -362,8 +367,11 @@ hr {
 }
 
 .card-footer {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: flex-end;
     border-top: 1px dashed #2f2f2f;
-    padding: 1rem;
+    padding-top: 0.5rem;
 }
 
 .cube {
@@ -371,7 +379,9 @@ hr {
     /* control the depth */
     height: 300px;
     padding: 10px;
-    aspect-ratio: 1;
+
+
+
     box-sizing: border-box;
     border: solid #0000;
     border-width: 0 0 var(--d) var(--d);
@@ -385,7 +395,8 @@ hr {
     --p: 50px;
     /* control the shape (can be percentage) */
     height: 180px;
-    aspect-ratio: 3/2;
+
+
     clip-path: polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%);
     background: #542437;
 }
@@ -394,7 +405,8 @@ hr {
     --p: 50px;
     /* control the shape (can be percentage) */
     height: 180px;
-    aspect-ratio: 3/2;
+
+
     clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
     background: #D95B43;
 }
@@ -404,7 +416,8 @@ hr {
     /* control the curvature (a percentage value without unit bigger than 50%)*/
 
     width: 250px;
-    aspect-ratio: 3/2;
+
+
     background: #a7237b;
     mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))), #0000 calc(100% - 1px), #000);
     clip-path: ellipse(calc(var(--c)*1%) 100% at top);
@@ -417,7 +430,6 @@ hr {
 
 .flower {
     width: 200px;
-    aspect-ratio: 1;
     --g: /20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
     mask: 100% 50% var(--g), 93.301% 75% var(--g), 75% 93.301% var(--g), 50% 100% var(--g), 25% 93.301% var(--g), 6.699% 75% var(--g), 0% 50% var(--g), 6.699% 25% var(--g), 25% 6.699% var(--g), 50% 0% var(--g), 75% 6.699% var(--g), 93.301% 25% var(--g), radial-gradient(100% 100%, #000 38.366%, #0000 calc(38.366% + 1px));
 }
