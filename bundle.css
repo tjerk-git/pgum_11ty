@@ -383,6 +383,7 @@ hr {
     /* control the depth */
     height: 300px;
     padding: 10px;
+    width:140px;
 
 
 
@@ -391,7 +392,7 @@ hr {
     border-width: 0 0 var(--d) var(--d);
     clip-path: polygon(100% 0, var(--d) 0, 0 var(--d), 0 100%, calc(100% - var(--d)) 100%, 100% calc(100% - var(--d)));
     background:
-        conic-gradient(at var(--d) calc(100% - var(--d)), #0000 25%, #0008 0 62.5%, #0004 0) border-box #9CC4E4;
+        conic-gradient(at var(--d) calc(100% - var(--d)), #0000 25%, #55B9A1 0 62.5%, #439c87 0) border-box #3e9983;
     /* the color */
 }
 
@@ -402,7 +403,7 @@ hr {
     width: 200px;
 
     clip-path: polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%);
-    background: #542437;
+    background: #B3D6AA;
 }
 
 .parallelogram {
@@ -422,7 +423,7 @@ hr {
     width: 250px;
     height: 200px;
 
-    background: #a7237b;
+    background: #E3C15B;
     mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))), #0000 calc(100% - 1px), #000);
     clip-path: ellipse(calc(var(--c)*1%) 100% at top);
 }
@@ -435,9 +436,7 @@ hr {
 .flower {
     width: 200px;
     height: 200px;
-    background: #a7237b;
-    --g: 20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
-    mask: 100% 50% var(--g), 93.301% 75% var(--g), 75% 93.301% var(--g), 50% 100% var(--g), 25% 93.301% var(--g), 6.699% 75% var(--g), 0% 50% var(--g), 6.699% 25% var(--g), 25% 6.699% var(--g), 50% 0% var(--g), 75% 6.699% var(--g), 93.301% 25% var(--g), radial-gradient(100% 100%, #000 38.366%, #0000 calc(38.366% + 1px));
+    background: #3f3f3f;
 }
 
 .octagon {
@@ -448,7 +447,7 @@ hr {
             50% var(--o),
             calc(100% - var(--o)) 50%,
             50% calc(100% - var(--o)));
-    background: #3B8686;
+    background: #35ABE2;
 }
 
 .slanted-edge {
@@ -465,7 +464,7 @@ hr {
     /* adjust to control the size  */
     aspect-ratio: 1;
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    background: #88A65E;
+    background: #6139D0;
 }
 
 /* Events */
