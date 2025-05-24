@@ -416,7 +416,7 @@ hr {
     /* control the curvature (a percentage value without unit bigger than 50%)*/
 
     width: 250px;
-
+    height: 200px;
 
     background: #a7237b;
     mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))), #0000 calc(100% - 1px), #000);
@@ -430,7 +430,9 @@ hr {
 
 .flower {
     width: 200px;
-    --g: /20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
+    height: 200px;
+    background: #a7237b;
+    --g: 20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
     mask: 100% 50% var(--g), 93.301% 75% var(--g), 75% 93.301% var(--g), 50% 100% var(--g), 25% 93.301% var(--g), 6.699% 75% var(--g), 0% 50% var(--g), 6.699% 25% var(--g), 25% 6.699% var(--g), 50% 0% var(--g), 75% 6.699% var(--g), 93.301% 25% var(--g), radial-gradient(100% 100%, #000 38.366%, #0000 calc(38.366% + 1px));
 }
 
