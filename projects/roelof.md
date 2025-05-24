@@ -1,5 +1,5 @@
 ---
-title: "Roelof Schipper, AUTHOR"
+title: "ROELOF SCHIPPER, AUTHOR"
 url: "https://roelofschipper.nl"
 shape: "trapezoid"
 ---

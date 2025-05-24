@@ -1,5 +1,5 @@
 ---
-title: "KIJKGAT, training creativity"
+title: "KIJKGAT, TRAINING CREATIVITY"
 url: "https://kijkgat.com"
 shape: "flower"
 ---

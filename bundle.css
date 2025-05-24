@@ -524,7 +524,7 @@ footer {
 
 .scroll {
     width: 32px;
-    animation: jiggle;
+    animation: 0.2s jiggle;
 }
 
 .scroll-container {

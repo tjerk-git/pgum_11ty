@@ -13,6 +13,20 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('scroll', () => {
+    // Get all cards
+    const cards = document.querySelectorAll('.card');
+    
+    // Add jiggle animation to first div in each card
+    cards.forEach(card => {
+        const firstDiv = card.querySelector('div');
+        if (firstDiv) {
+            firstDiv.style.animation = 'jiggle 0.5s ease-in-out';
+            // Remove animation after it completes
+            firstDiv.addEventListener('animationend', () => {
+                firstDiv.style.animation = '';
+            });
+        }
+    });
 
     if (window.scrollY >= lastScrollY + 30) {
         const text = thebigboi.innerText;
