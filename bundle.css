@@ -558,26 +558,14 @@ footer {
     justify-content: center;
 }
 
-@keyframes jiggle {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-.scroll {
-    animation: jiggle 2s ease-in-out infinite;
-}
-
 @media (min-width: 768px) {
     .trading-cards {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .logo-container{
+        justify-content: flex-start !important;
     }
 }
