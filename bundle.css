@@ -55,6 +55,7 @@ body {
 
 .content-wrapper-sunk {
     padding: 1rem;
+    overflow-x: hidden;
 }
 
 h1,
