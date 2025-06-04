@@ -12,7 +12,13 @@ window.addEventListener('load', () => {
     }, 2000);
 });
 
+
 window.addEventListener('scroll', () => {
+
+    // when i scroll change the background position of the barber pole
+    const barberPole = document.querySelector('.barber-pole');
+    barberPole.style.backgroundPositionY = `${window.scrollY}px`;
+
 
     if (window.scrollY >= lastScrollY + 30) {
         const text = thebigboi.innerText;

@@ -40,6 +40,7 @@ footer {
 /* Typography */
 body {
     margin: 0;
+    margin-left: 3dvw;
     color: var(--color-dark-gray);
     background: var(--color-faded-white);
     padding-bottom: 4rem;
@@ -560,12 +561,16 @@ footer {
 }
 
 .barber-pole {
-    width: 5dvw;
-    height: 100dvh;
+    width: 3dvw;
+    height: 100vh;
+    min-height: 100vh;
     background: var(--color-pink-light);
-    position: absolute;
-    right:0;
-    top:0;
+    background: var(--color-pink-light) repeating-linear-gradient(57deg,#0000,#0000 50px,var(--color-blue) 50px,var(--color-blue) 110px) fixed;
+    background-attachment: fixed;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
 }
 
 @media (min-width: 768px) {
