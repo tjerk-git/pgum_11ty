@@ -559,6 +559,15 @@ footer {
     justify-content: center;
 }
 
+.barber-pole {
+    width: 5dvw;
+    height: 100dvh;
+    background: var(--color-pink-light);
+    position: absolute;
+    right:0;
+    top:0;
+}
+
 @media (min-width: 768px) {
     .trading-cards {
         flex-direction: row;
