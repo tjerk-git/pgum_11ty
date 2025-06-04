@@ -17,7 +17,8 @@ window.addEventListener('scroll', () => {
 
     // when i scroll change the background position of the barber pole
     const barberPole = document.querySelector('.barber-pole');
-    barberPole.style.backgroundPositionY = `${window.scrollY}px`;
+    // Use window.pageYOffset for better mobile compatibility
+    barberPole.style.backgroundPositionY = `${window.pageYOffset}px`;
 
 
     if (window.scrollY >= lastScrollY + 30) {

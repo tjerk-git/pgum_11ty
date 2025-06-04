@@ -565,7 +565,7 @@ footer {
     height: 100vh;
     min-height: 100vh;
     background: var(--color-pink-light);
-    background: var(--color-pink-light) repeating-linear-gradient(57deg,#0000,#0000 50px,var(--color-blue) 50px,var(--color-blue) 110px) fixed;
+    background: var(--color-pink-light) repeating-linear-gradient(57deg,#0000,#0000 70px,var(--color-blue) 70px,var(--color-blue) 110px) fixed;
     background-attachment: fixed;
     position: fixed;
     left: 0;
