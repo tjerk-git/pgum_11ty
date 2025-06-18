@@ -20,11 +20,11 @@ While I'll use personal examples to illustrate points, this lecture isn't about 
 
 ## Flywheel for Design Students
 
-So the idea of the flywheel is that “following” one step will kickstart the other, and once you have got momentum its easier to keep it going. It's not a linear thing, there isn't any order that makes sense, I just made this up, it's the third draft.
+So the idea of the flywheel is that “following” one step will kickstart the other, and once you have got momentum it’s easier to keep it going. It's not a linear thing, there isn't any order that makes sense, I just made this up, it's the third draft.
 
 ## Just start
 
-It’s annoying advice. The whole reason you are reading a self-help book, looking at a tutorial or attending this session is that you didn’t start. But that’s the thing with cliché advice, its mostly true.
+It’s annoying advice. The whole reason you are reading a self-help book, looking at a tutorial or attending this session is that you didn’t start. But that’s the thing with cliché advice, it’s mostly true.
 
 Most creatives describe a process that you can train your brain to be more “creative” it’s just a muscle that you can exercise.
 
@@ -61,13 +61,7 @@ So challenging yourself appropriately rewards you with focus, attention, and a s
 
 > "If putting in effort (mental or physical) makes you release endorphins (thus making you happy), has this age of comfort and services made us less human?"
 
-### 2. Remove Distractions and Take Breaks
-
-There are many examples where creative people were working on a project and they were stuck. Like really stuck... so instead of being stuck, they freed themselves by sleeping, taking a shower, running 10 miles, talking a walk and then all of the sudden, the solution hits you. Let your brain cook.
-
-Let's address distractions—the elements that can pull you out of your focus and creative process.
-
-First, understand that distractions and breaks are different. Taking a break means intentionally stopping work to recharge. Please take breaks!
+### Remove Distractions
 
 Distractions are unwanted interruptions that break your flow state.
 
@@ -75,24 +69,40 @@ Many self-help books discuss structuring when and how much information you recei
 
 Consider your relationship with your phone. Some people have reached a Pavlovian stage—like the famous experiment where Pavlov's dog salivated at the sound of a bell associated with feeding time.
 
-I've seen people instinctively reach for their phones at the first buzz, even during important conversations or social gatherings.
+There are many examples where creative people were working on a project and they were stuck. Like really stuck... so instead of being stuck, they freed themselves by sleeping, taking a shower, running 10 miles, talking a walk and then all of the sudden, the solution hits you. Let your brain cook.
 
-#### Digital Minimalism
+Let's address distractions—the elements that can pull you out of your focus and creative process.
 
-In _Digital Minimalism_, Cal Newport offers helpful guidance:
+First, understand that distractions and breaks are different. Taking a break means intentionally stopping work to recharge. Please take breaks!
 
-- **Clutter is costly**: Too many apps and devices consume your time and attention, diminishing overall life quality.
-- **Remove as many notifications as possible**
-- **Optimization is important**: It's not just about which technologies you use, but how you use them to maximize benefit.
-- **Intentionality is satisfying**: Being deliberate about your technology use brings meaningful satisfaction beyond convenience.
+### Add Friction
 
-Clean up your phone, do a 30-day digital cleanse, be intentional about what apps you use and why.
+Most stuff is designed from a frame of efficiency, which sometimes it’s really awesome. Don’t worry I don’t hate technology, but this way of design also has some negative side effects to your mental health, and most importantly your dopamine levels.
 
-Remove distractions but do take breaks.
+Maybe these are some things you have to add friction or prevent yourself of becoming a mindless consumer.
+
+- You can fill every silent moment with music.
+- Every boring moment with a short video.
+- Every moment of waiting into a moment of distraction.
+- Every notification into an addiction.
+- Swipe all people away before you get to know them.
+- Ignore every person in the store by using an order screen.
+- Order with QR code instead of talking to someone.
+- Try to explain your human problems to a A.I chatbot.
+- Generate A.I music instead of learning an instrument
+- Let algorithms choose what you watch, instead of exploring for yourself.
+- Don’t have to know where you are because you always have navigation.
+- Let a meal kit service decide your dinner, instead of improvising in the kitchen.
+- Let a filter “fix” your photo, instead of learning photography.
+- Let a translation app speak for you, instead of learning a new language.
+
+The author of Dopamine Nation advocates for reintroducing difficulty and slowness into life—through activities like playing an instrument, cooking, or engaging deeply with art and relationships—as a way to regain depth, empathy, and fulfillment. True connection and satisfaction come from effort, not just ease
+
+So add friction intentionally.
 
 **Opinion slide**: Some claim TikTok can be inspiring, but that's like saying cola contains water. Yes, there's water in cola, but it's mostly sugar, which is harmful in large amounts. TikTok is similar—remove it.
 
-### 3. Be Intentional and Love the Process
+## Be Intentional and Love the Process
 
 Being a designer might seem result-oriented: "My website is online," "My poster is on the wall," "My logo is being used," "Look at my finished video!"
 
@@ -100,7 +110,7 @@ But what we should truly appreciate (especially in this era of AI-generated cont
 
 **Opinion slide**: Another reason I dislike TikTok is that you might watch someone power-washing their driveway but don't experience the satisfaction of doing it yourself. These videos trick you into feeling accomplishment when you've actually done nothing. Don't fall for these dopamine traps.
 
-#### Atomic Habits
+### Atomic Habits
 
 This is where _Atomic Habits_ comes in. Become someone who enjoys drawing or doodling for its own sake. Find pleasure in experimenting with code just for fun. Maybe edit videos no one will see, simply out of curiosity.
 
@@ -112,7 +122,7 @@ When starting a new goal, focus more on how it shapes you as a person or designe
 
 "I want to run a 5K because I want to become a fitter person."
 
-#### Player, Referee, Coach Mindset
+### Player, Referee, Coach Mindset
 
 I see much self-sabotage among design students, who criticize their work before it's even begun: "It sucks, it's not finished, don't look at this yet."
 
@@ -125,25 +135,3 @@ Develop these three mindsets for yourself:
 - **Coach**: Encourages your best effort regardless of outcome.
 
 Be intentional about which role you're in when creating. This approach also works well for giving and receiving feedback. (de Bono, E. (1985). Six thinking hats. Little, Brown and Company.)
-
-### 4. Just Start
-
-Sometimes you just need to begin—only then can you see what happens next.
-
-To iterate on something, you must first have something to iterate on.
-
-#### Creative Confidence
-
-The Kelley brothers argue in _Creative Confidence_ that creativity isn't an innate trait—it's a skill developed through practice, starting, failing, and trying again.
-
-| Book Title                      | Author(s) & Publication Details  |
-| ------------------------------- | -------------------------------- |
-| _Atomic Habits_                 | Clear, J. (2018).                |
-| _Building a Second Brain_       | Forte, T. (2022).                |
-| _Creative Confidence_           | Kelley, T., & Kelley, D. (2013). |
-| _Digital Minimalism_            | Newport, C. (2019).              |
-| _Offline Matters_               | Baty, J., & Dovey, A. (2020).    |
-| _Intentioneel leven_            | Pfauth, E.-J. (2025).            |
-| _Failed It!_                    | Bjerke, E. (2017).               |
-| _How to be a design student..._ | Macdonald, S. (2010).            |
-| _Eat That Frog!_                | Tracy, B. (2001).                |
