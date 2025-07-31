@@ -135,3 +135,7 @@ Develop these three mindsets for yourself:
 - **Coach**: Encourages your best effort regardless of outcome.
 
 Be intentional about which role you're in when creating. This approach also works well for giving and receiving feedback. (de Bono, E. (1985). Six thinking hats. Little, Brown and Company.)
+
+#### Links
+
+[https://arxiv.org/abs/2506.08872](https://arxiv.org/abs/2506.08872)
