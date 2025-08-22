@@ -37,3 +37,47 @@ thebigboi.addEventListener('click', () => {
         thebigboi.innerText = 'POTLOODGUM';
     }
 });
+
+// Simple lightbox for photography images
+window.addEventListener('DOMContentLoaded', () => {
+    const containerImages = document.querySelectorAll('.images-container img, .photos img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    if (!containerImages.length || !lightbox || !lightboxImage || !lightboxClose) return;
+
+    const openLightbox = (src, alt) => {
+        lightboxImage.src = src;
+        lightboxImage.alt = alt || '';
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeLightbox = () => {
+        lightbox.classList.remove('open');
+        lightboxImage.removeAttribute('src');
+        document.body.style.overflow = '';
+    };
+
+    containerImages.forEach(img => {
+        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        img.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openLightbox(img.src, img.alt);
+            }
+        });
+        img.setAttribute('tabindex', '0');
+        img.setAttribute('role', 'button');
+        img.setAttribute('aria-label', 'Open image in lightbox');
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+});
