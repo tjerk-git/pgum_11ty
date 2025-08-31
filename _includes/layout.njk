@@ -22,6 +22,7 @@ title: Potloodgum
     <meta property="og:description" content="{% if description %}{{ description }}{% else %}Potloodgum - Tjerk Dijkstra, creating accessible and human-centered web design in Leeuwarden, Netherlands. Specializing in non-profit and social impact projects.{% endif %}">
     <meta property="og:image" content="/images/og.png">
     <link rel="stylesheet" href="/bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://potloodgum.com{{ page.url }}">
     <meta
@@ -55,6 +56,18 @@ title: Potloodgum
   <body>
     {{ content | safe }}
     {% include "partials/_footer.njk" %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      // Initialize lightbox with custom options
+      $(document).ready(function() {
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'showImageNumberLabel': true
+        });
+      });
+    </script>
     <script src="/app.js" defer type="module"></script>
   </body>
 </html>

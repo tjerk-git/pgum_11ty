@@ -7,43 +7,26 @@ keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuward
 {% include "partials/_header.njk" %}
 
 <style>
-
-.photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
-  gap: 1rem;
-}
-
-@media (max-width: 768px) {
-  .photos {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-
-@media (max-width: 480px) {
-  .photos {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-
 #toggleButton{
     padding: 1rem;
-    background-color: var(--black);
-    color: var(--off-white);
+    background-color: var(--color-dark-gray);
+    color: var(--color-faded-white);
     border-radius: 10px;
     text-decoration: none;
-    position:fixed;
-    top:10rem;
-    left:3rem;
-    z-index:100;
+    position: fixed;
+    top: 10rem;
+    left: 3rem;
+    z-index: 100;
+    border: none;
+    cursor: pointer;
 }
 
 .photo-toggle {
     position: relative;
     display: inline-block;
-    margin: 1rem;
     width: auto;
+    break-inside: avoid;
+    margin-bottom: 1rem;
 }
 
 .photo-toggle img {
@@ -64,7 +47,7 @@ keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuward
     color: #333;
     padding: 1rem;
     box-sizing: border-box;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: left;
     justify-content: center;
     align-items: center;
@@ -73,17 +56,17 @@ keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuward
 </style>
 
 <main>
-    <section class="playlist radius-top-left radius-top-right" style="padding:1rem;">
-        <div class="playlist__header">
-            <h1>PHOTOGRAPHY</h1>
-            <p class="visually-hidden">A collection of photographs by Tjerk Dijkstra</p>
-            <button id="toggleButton" data-state="images" style="margin-top:1rem;">
-            show only text
+    <div class="container">
+        <div class="sidebar">
+            <img src="/images/tjerk-dijkstra.jpg" alt="Tjerk Dijkstra">
+            <h1>Tjerk Dijkstra</h1>
+            <p>Photographer & Visual Artist based in Leeuwarden, Netherlands. Capturing moments through analog and digital mediums, exploring light, shadow, and human connection.</p>
+            <button id="toggleButton" data-state="images">
+                show only text
             </button>
-
         </div>
 
-        <section class="photos">
+        <section class="gallery">
         <figure class="photo-toggle">
             <img src="/images/photos/1.jpeg" alt="Black and white picture of laundry hanging on a washing line the clouds have summer pattern and the picture is taken from a low angle, the clothes seem to be from a older gentleman. It almost appears that some clothes are floating in the sky.">
             <div class="alt-overlay"></div>
@@ -156,9 +139,7 @@ keywords: Tjerk Dijkstra photography, creative photography Netherlands, Leeuward
             <div class="alt-overlay"></div>
         </figure>
         </section>
-
-
-    </section>
+    </div>
 </main>
 
 
