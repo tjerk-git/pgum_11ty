@@ -272,7 +272,8 @@ figcaption {
 /* Decorative Elements */
 .highlight-marker,
 .highlight-marker-blue,
-.highlight-marker-pink {
+.highlight-marker-pink
+.highlight-marker-black {
     padding: 0 4px;
     border-radius: 8px 2px 8px 2px;
     box-decoration-break: clone;
@@ -282,15 +283,28 @@ figcaption {
 }
 
 .highlight-marker {
-    background-color: rgba(255, 249, 82, 0.3);
+    background-color: #f279a5;
+   color:white; 
+}
+
+.highlight-marker a{
+    color:white;
 }
 
 .highlight-marker-blue {
-    background-color: rgba(47, 116, 181, 0.3);
+    background-color: #2f74b5;
+    color:white; 
 }
 
-.highlight-marker-pink {
-    background-color: rgba(242, 121, 165, 0.3);
+.highlight-marker-black {
+    background-color: #2f2f2f;
+    padding: 0 4px;
+    border-radius: 8px 2px 8px 2px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    transform: rotate(-0.5deg);
+    display: inline-block;
+    color:white; 
 }
 
 .cutting-line {
@@ -660,13 +674,14 @@ footer {
 .sidebar p {
   color: #555;
   line-height: 1.5;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 
 /* Main content area */
 .main-content {
   overflow-y: auto;
+  margin-top: -1rem;
 }
 
 /* Align the first h2 with the sidebar image */
