@@ -645,7 +645,6 @@ footer {
   display: grid;
   grid-template-columns: 300px 1fr;
   gap: 2rem;
-  max-width: 1400px;
   width: 100%;
   padding: 1rem;
 }
