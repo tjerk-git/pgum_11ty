@@ -19,9 +19,8 @@ We live in an age of infinite digital abundance. Information, entertainment, and
 
 Most of us are consuming "junk tech"—content that is highly processed, addictive, and ultimately leaves us feeling drained rather than nourished.
 
-*Bon appétit.*
+*Bon appétit.* - Tjerk
 
--x- Tjerk
 ## Why We Need a Diet
 
 If you ate fast food for every meal, you'd feel sluggish, your sleep would suffer, and your long-term health would deteriorate. Digital consumption is no different.
@@ -44,7 +43,7 @@ We often open apps unconsciously. It's a muscle memory: unlock phone -> swipe ->
 YouTube is a prime example of a platform that can be either a university or a slot machine. The default homepage is designed to distract you.
 
 **The Fix:**
-- **Install an Extension:** Use browser extensions like [Unhook](https://unhook.app/) or [DF Tube](https://chromewebstore.google.com/detail/df-tube-distraction-free-y/mjdepdfccjgcndkmemponafgmkkfikjj) (Distraction Free YouTube).
+- **Install an Extension:** Use browser extensions like [Unhook](https://unhook.app/) or [DF Tube](https://chromewebstore.google.com/detail/hide-shorts-for-youtube/ankepacjgoajhjpenegknbefpmfffdic) (Distraction Free YouTube).
 - **Hide the Junk:** Configure these tools to hide YouTube Shorts, the comments section, and the algorithmic sidebar recommendations.
 - **Redirect to Subscriptions:** Set your default view to the *Subscriptions* page. This ensures you only see content from creators you've actively chosen to follow, turning the platform from a random feed into a curated library.
 
@@ -71,7 +70,7 @@ We've made our devices portable, so they follow us everywhere: to the toilet, to
 Give your devices a permanent home.
 - **Laptops:** stay on the desk. They are work tools, not lap warmers for the sofa.
 - **Phones:** live in a specific bowl in the hallway or a charger in the kitchen.
-- **The "Plant" Holder:** Queen of Shitty Robots, **Simone Giertz**, created a brilliant [device that grows a plant](https://www.youtube.com/watch?v=TyM3A7C85QI) only when her phone is placed inside it. If she removes her phone, the light turns off, and the plant dies. It’s a tangible, living reminder that your phone belongs in its place, not in your hand.
+- **The "Plant" Holder:** Queen of Shitty Robots, **Simone Giertz**, created a brilliant [device that grows a plant](https://www.youtube.com/watch?v=0rXpncpkLcw) only when her phone is placed inside it. If she removes her phone, the light turns off, and the plant dies. It’s a tangible, living reminder that your phone belongs in its place, not in your hand.
 
 ### The Weekly Blackout (Kill the Router)
 Sometimes the only way to win is not to play. Pick one day a week (maybe Sunday) to just... turn it off.
