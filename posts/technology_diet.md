@@ -40,7 +40,7 @@ We often open apps unconsciously. It's a muscle memory: unlock phone -> swipe ->
 - **The Result:** Often, the answer is "No, I was just bored." This micro-pause is enough to bring your conscious brain back online.
 
 
-### Case Study: The YouTube Detox
+### The YouTube Detox
 YouTube is a prime example of a platform that can be either a university or a slot machine. The default homepage is designed to distract you.
 
 **The Fix:**
