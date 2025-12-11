@@ -1,5 +1,5 @@
 ---
-title: "Hello, I'm a Technological Nutritionist"
+title: "Hello, its my Tjerk, your favorite Internet Nutritionist"
 date: 2025-12-11
 layout: post
 ---
