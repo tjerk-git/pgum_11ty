@@ -1,10 +1,10 @@
 ---
-title: "Hello, its my Tjerk, your favorite Internet Nutritionist"
+title: "Hello, its me Tjerk, your favorite Internet Nutritionist"
 date: 2025-12-11
 layout: post
 ---
 
-# Hello, its my Tjerk, your favorite Internet Nutritionist
+# Hello, its me Tjerk, your favorite Internet Nutritionist
 
 Just like a traditional dietitian helps you understand what you eat, how it affects your body, and how to build healthier habits, I'm here to do the same for your technology consumption.
 
