@@ -49,7 +49,7 @@ body {
 /* Layout */
 .content-wrapper {
     padding-left: 1rem;
-    padding-right:1rem;
+    padding-right: 1rem;
     overflow-x: hidden;
 }
 
@@ -193,7 +193,7 @@ figcaption {
     right: 1rem;
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 0.3rem 0.6rem;
     border-radius: 6px;
     cursor: pointer;
@@ -259,6 +259,7 @@ figcaption {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -272,8 +273,7 @@ figcaption {
 /* Decorative Elements */
 .highlight-marker,
 .highlight-marker-blue,
-.highlight-marker-pink
-.highlight-marker-black {
+.highlight-marker-pink .highlight-marker-black {
     padding: 0 4px;
     border-radius: 8px 2px 8px 2px;
     box-decoration-break: clone;
@@ -284,16 +284,16 @@ figcaption {
 
 .highlight-marker {
     background-color: #f279a5;
-   color:white; 
+    color: white;
 }
 
-.highlight-marker a{
-    color:white;
+.highlight-marker a {
+    color: white;
 }
 
 .highlight-marker-blue {
     background-color: #2f74b5;
-    color:white; 
+    color: white;
 }
 
 .highlight-marker-black {
@@ -304,7 +304,7 @@ figcaption {
     -webkit-box-decoration-break: clone;
     transform: rotate(-0.5deg);
     display: inline-block;
-    color:white; 
+    color: white;
 }
 
 .cutting-line {
@@ -403,9 +403,9 @@ blockquote cite {
     font-weight: bold;
 }
 
-.giant-title-boi-container{
-    margin:0;
-    padding:0;
+.giant-title-boi-container {
+    margin: 0;
+    padding: 0;
 }
 
 /* Special Elements */
@@ -435,7 +435,7 @@ hr {
 
 .sunk {
     margin-bottom: -1.5rem;
-    margin-left:1rem;
+    margin-left: 1rem;
     font-size: 4rem;
 }
 
@@ -445,7 +445,7 @@ hr {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .card {
@@ -456,7 +456,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     min-width: 9rem;
     gap: 0.4rem;
 
@@ -490,7 +490,7 @@ hr {
 .card-footer {
     display: flex;
     gap: 0.3rem;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-top: 1px dashed #2f2f2f;
     padding-top: 0.5rem;
     font-size: 0.75rem;
@@ -549,6 +549,13 @@ hr {
     width: 80px;
     height: 80px;
     clip-path: shape(from 87.45% 45.02%, curve to 92.48% 56.45% with 90.99% 50.00%, curve to 92.05% 69.35% with 93.97% 62.91%, curve to 82.42% 77.15% with 90.14% 75.80%, curve to 71.01% 83.22% with 74.69% 78.49%, curve to 61.91% 91.53% with 67.33% 87.95%, curve to 49.74% 96.95% with 56.49% 95.12%, curve to 38.70% 91.46% with 42.99% 98.79%, curve to 25.99% 85.79% with 34.41% 84.13%, curve to 15.38% 80.54% with 17.56% 87.44%, curve to 14.30% 66.90% with 13.20% 73.65%, curve to 13.33% 55.08% with 15.41% 60.16%, curve to 11.20% 44.30% with 11.25% 50.00%, curve to 11.95% 32.32% with 11.14% 38.59%, curve to 16.84% 21.25% with 12.75% 26.06%, curve to 27.31% 15.38% with 20.92% 16.44%, curve to 38.83% 11.12% with 33.70% 14.32%, curve to 50.39% 5.23% with 43.95% 7.93%, curve to 62.85% 5.60% with 56.83% 2.53%, curve to 72.70% 14.03% with 68.88% 8.67%, curve to 79.11% 24.51% with 76.53% 19.39%, curve to 82.80% 34.84% with 81.69% 29.63%, curve to 87.45% 45.02% with 83.91% 40.04%);
+}
+
+.tent {
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: #F68953;
 }
 
 .flower {
@@ -619,7 +626,7 @@ hr {
 }
 
 footer {
-    border-bottom:1px solid #6d6d6d;
+    border-bottom: 1px solid #6d6d6d;
     padding: 1rem;
     height: 200px;
     width: 100%;
@@ -642,159 +649,163 @@ footer {
 
 /* Wrapper for sidebar + gallery */
 .container {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 2rem;
-  width: 100%;
-  padding: 1rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
 }
 
 /* Sidebar profile */
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  position: sticky;
-  top: 2rem;
-  align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: sticky;
+    top: 2rem;
+    align-self: start;
 }
 
 .sidebar img {
-  border-radius: 12px;
-  max-width: 100%;
+    border-radius: 12px;
+    max-width: 100%;
 }
 
 .sidebar h1 {
-  margin: 0;
-  font-size: 1.5rem;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .sidebar p {
-  color: #555;
-  line-height: 1.5;
-  font-size: 0.7rem;
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.7rem;
 }
 
 
 /* Main content area */
 .main-content {
-  overflow-y: auto;
-  margin-top: -1rem;
+    overflow-y: auto;
+    margin-top: -1rem;
 }
 
 /* Align the first h2 with the sidebar image */
 .main-content h2:first-of-type {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 /* Photo grid (masonry style) - for photography sections */
 .gallery {
-  column-count: 3;
-  column-gap: 1rem;
+    column-count: 3;
+    column-gap: 1rem;
 }
 
 .gallery img {
-  width: 100%;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.2s ease;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.2s ease;
 }
 
 .gallery a {
-  display: inline-block;
-  width: 100%;
-  break-inside: avoid;
-  margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 1rem;
 }
 
 .gallery a:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Adjust gallery for homepage photography section */
 .color-purple .gallery {
-  column-count: 2;
-  column-gap: 1rem;
+    column-count: 2;
+    column-gap: 1rem;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .container {
-    grid-template-columns: 250px 1fr;
-  }
-  .gallery {
-    column-count: 2;
-  }
+    .container {
+        grid-template-columns: 250px 1fr;
+    }
+
+    .gallery {
+        column-count: 2;
+    }
 }
 
 @media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-  .sidebar {
-    position: relative;
-    top: auto;
-  }
-  .gallery {
-    column-count: 1;
-  }
-  .color-purple .gallery {
-    column-count: 1;
-  }
-  
-  .trading-cards {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
-  }
-  
-  .card {
-    width: 100%;
-    max-width: none;
-    min-width: auto;
-  }
+    .container {
+        grid-template-columns: 1fr;
+    }
 
-  .logo-container {
-    justify-content: center !important;
-    flex-direction: column;
-    padding: 1rem;
-  }
-  
-  .logo-container img {
-    width: 4rem;
-  }
-  
-  .giant-title-boi {
-    font-size: 3rem !important;
-  }
-  
-  .logo-container.sticky-small {
-    transform: scale(0.4);
-    top: 0.5rem;
-    right: 0.5rem;
-    padding: 0.25rem;
-  }
-  
-  .logo-container.sticky-small .giant-title-boi {
-    font-size: 1.5rem !important;
-  }
-  
-  .logo-container.sticky-small img {
-    width: 3rem;
-  }
+    .sidebar {
+        position: relative;
+        top: auto;
+    }
+
+    .gallery {
+        column-count: 1;
+    }
+
+    .color-purple .gallery {
+        column-count: 1;
+    }
+
+    .trading-cards {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: none;
+        min-width: auto;
+    }
+
+    .logo-container {
+        justify-content: center !important;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo-container img {
+        width: 4rem;
+    }
+
+    .giant-title-boi {
+        font-size: 3rem !important;
+    }
+
+    .logo-container.sticky-small {
+        transform: scale(0.4);
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    .logo-container.sticky-small .giant-title-boi {
+        font-size: 1.5rem !important;
+    }
+
+    .logo-container.sticky-small img {
+        width: 3rem;
+    }
 }
 
 @media (min-width: 768px) {
-  .trading-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    .trading-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
-  .logo-container {
-    justify-content: flex-start !important;
-  }
+    .logo-container {
+        justify-content: flex-start !important;
+    }
 }
