@@ -4,6 +4,11 @@ date: 2026-02-18
 layout: post
 ---
 
+![AI Should do dishes](/images/ai-should-do-dishes.jpg)
+
+_Source: [https://thepit.social/@APBBlue/115970466908599221](https://thepit.social/@APBBlue/115970466908599221)_
+
+
 # Using tech with my own well defined intentions
 
 (This blog is A.I free, in writing and development)
@@ -46,7 +51,7 @@ It's also breaking my active engagement with the projects I build.
 
 I am going to be taking a big step back.
 
-I now use Zed editor with a.i disabled. 
+I now use Zed editor with a.i disabled.
 
 Currently LLM tasks for me are for:
 
