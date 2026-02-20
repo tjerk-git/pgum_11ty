@@ -4,14 +4,15 @@ date: 2026-02-18
 layout: post
 ---
 
+# Using tech with my own well defined intentions
+
+(This blog is A.I free, in writing and development)
+
+
 ![AI Should do dishes](/images/ai-should-do-dishes.jpg)
 
 _Source: [https://thepit.social/@APBBlue/115970466908599221](https://thepit.social/@APBBlue/115970466908599221)_
 
-
-# Using tech with my own well defined intentions
-
-(This blog is A.I free, in writing and development)
 
 I want to base the decisions I make on the base of what is proven to be better for humans.
 For me that means choosing tech that enhances human virtues, like connection, creativity, honesty, joy, kindness, modesty.
