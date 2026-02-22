@@ -7,6 +7,11 @@ description: Discover what Tjerk Dijkstra is currently working on, including tea
 {% include "partials/_header.njk" %}
 
 <div class="content-wrapper">
+<nav class="blog-menu">
+   <ul>
+      <li><a href="/"> < Check out all projects</a></li>
+   </ul>
+</nav>
 <article>
       <h2>What is a NOW page?</h2>
       <p class="summary">
@@ -19,7 +24,22 @@ description: Discover what Tjerk Dijkstra is currently working on, including tea
         that stays static, a NOW page reflects your current priorities and interests. It's a snapshot of what you're working on
         and thinking about right now.
       </p>
-      <h2>What I'm up to</h2>
+      <h2>Latest ramblings about design</h2>
+      <section class="color-blue">
+          <div class="content-wrapper-sunk">
+          {% for post in collections.posts | reverse %}
+              <a href="{{ post.url }}" class="event">
+                  <div class="event-info">
+                      <h3>{{ post.data.title }}</h3>
+                      <p>{{ post.data.date | fromNow }}</p>
+                  </div>
+                  <div class="event-action">&gt;&gt;</div>
+              </a>
+          {% endfor %}
+          </div>
+      </section>
+
+
       <p class="summary">
         I want to work on projects that have a social impact. Sometimes that means exploring and developing new concepts and
         interventions and co-creating with the people involved.
@@ -31,10 +51,10 @@ description: Discover what Tjerk Dijkstra is currently working on, including tea
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit NHL Stenden University website">NHL Stenden University of Applied Sciences</a>.
-                      And a freelance developer and designer at Potloodgum.
+            Come by sometime :)
           </p>
           <p class="summary">
-            <small>Last updated: March 2025</small>
+            <small>Last updated: Feb 2026</small>
           </p>
 </article>
 </div>
