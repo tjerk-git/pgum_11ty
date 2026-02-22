@@ -26,7 +26,9 @@ And I love speaking, researching, and understanding lots of different folk about
 
 For the most part, I’ve seen generative A.I. not add to that at all. Honestly, it's been making things worse. I’ve seen bloated texts, crappy logos, vibe-coded bloatware, impossible videos, and music without any story or soul. 
 
-Even for brainstorming, researching, summarizing, or writing text—when I have conversations with my students, we both quickly realize that maybe this should be written and understood by a human being. Because now, it’s an empty shell, and the creative process and the teachings of that process are lost.
+---
+
+Even for brainstorming, researching, summarizing, or writing text when I have conversations with my students, we both quickly realize that maybe this should be written and understood by a human being. Because now, it’s an empty shell, and the creative process and the teachings of that process are lost.
 
 In all fairness, some machine learning is great, and some generated code really makes me work faster. But in the grand scheme of things, I see no real value for most generative tools.
 
