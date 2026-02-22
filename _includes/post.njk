@@ -5,18 +5,38 @@ description: Potloodgum creates accessible and impactful web design solutions fo
 ---
 
 {% include "partials/_header.njk" %}
-<nav>
+<nav class="blog-menu">
    <ul>
-      <li><a href="/#lectures">Back to posts</a></li>
+      <li><a href="/#lectures"> < Back to all posts</a></li>
    </ul>
 </nav>
-<section class="color-white">
-   <div class="content-wrapper-sunk">
+<section class="color-white ">
+   <div class="content-wrapper-sunk blog-post">
       <article>
          {{ content | safe }}
          <div class="button-container">
-            <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}"></div>
+            <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}">
+                  <p class="sidenote">Applaud this article, hit it as many times as you like</p>
+            </div>
+
          </div>
       </article>
    </div>
+</section>
+
+<section class="color-blue">
+    <div class="content-wrapper-sunk">
+    {% for post in collections.posts | reverse %}
+
+        {% if title != post.data.title %}
+        <a href="{{ post.url }}" class="event">
+            <div class="event-info">
+                <h3>{{ post.data.title }}</h3>
+                <p>{{ post.data.date | fromNow }}</p>
+            </div>
+            <div class="event-action">&gt;&gt;</div>
+        </a>
+        {% endif %}
+    {% endfor %}
+    </div>
 </section>

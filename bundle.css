@@ -22,8 +22,12 @@ footer {
     font-style: normal;
     font-display: swap;
     font-weight: 300 900;
-    src: url(https://cdn.jsdelivr.net/fontsource/fonts/darker-grotesque:vf@latest/latin-wght-normal.woff2) format("woff2-variations");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/darker-grotesque:vf@latest/latin-wght-normal.woff2)
+        format("woff2-variations");
+    unicode-range:
+        U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+        U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+        U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* Variables */
@@ -43,7 +47,19 @@ body {
     color: var(--color-dark-gray);
     background: var(--color-faded-white);
     padding-bottom: 4rem;
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:
+        "Inter",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
 }
 
 /* Layout */
@@ -216,7 +232,6 @@ figcaption {
     overflow-x: hidden;
 }
 
-
 .logo-container {
     overflow-x: hidden;
     display: flex;
@@ -269,7 +284,6 @@ figcaption {
     animation: rotate 20s linear infinite;
 }
 
-
 /* Decorative Elements */
 .highlight-marker,
 .highlight-marker-blue,
@@ -313,7 +327,7 @@ figcaption {
 }
 
 .cutting-line:after {
-    content: '\002702';
+    content: "\002702";
     display: inline-block;
     position: relative;
     top: -12px;
@@ -395,6 +409,10 @@ blockquote:after {
     font-family: Georgia, serif;
 }
 
+.sidenote {
+    font-size: 0.8rem;
+}
+
 blockquote cite {
     display: block;
     text-align: right;
@@ -472,13 +490,22 @@ hr {
     height: 180px;
     border-radius: var(--r);
     --_m: var(--r), #000 calc(100% - 1px), #0000;
-    --_d: (var(--s) + var(--r))*cos(var(--a));
+    --_d: (var(--s) + var(--r)) * cos(var(--a));
     mask:
         radial-gradient(var(--r) at calc(var(--p) + var(--_d)) var(--_m)),
         radial-gradient(var(--r) at calc(var(--p) - var(--_d)) var(--_m)),
-        radial-gradient(var(--s) at var(--p) calc(-1*sin(var(--a))*var(--s)),
-            #0000 100%, #000 calc(100% + 1px)) 0 calc(var(--r)*(1 - sin(var(--a)))) no-repeat,
-        linear-gradient(90deg, #000 calc(var(--p) - var(--_d)), #0000 0 calc(var(--p) + var(--_d)), #000 0);
+        radial-gradient(
+                var(--s) at var(--p) calc(-1 * sin(var(--a)) * var(--s)),
+                #0000 100%,
+                #000 calc(100% + 1px)
+            )
+            0 calc(var(--r) * (1 - sin(var(--a)))) no-repeat,
+        linear-gradient(
+            90deg,
+            #000 calc(var(--p) - var(--_d)),
+            #0000 0 calc(var(--p) + var(--_d)),
+            #000 0
+        );
 }
 
 .card h3 {
@@ -506,9 +533,21 @@ hr {
     box-sizing: border-box;
     border: solid #0000;
     border-width: 0 0 var(--d) var(--d);
-    clip-path: polygon(100% 0, var(--d) 0, 0 var(--d), 0 100%, calc(100% - var(--d)) 100%, 100% calc(100% - var(--d)));
-    background:
-        conic-gradient(at var(--d) calc(100% - var(--d)), #0000 25%, #55B9A1 0 62.5%, #439c87 0) border-box #3e9983;
+    clip-path: polygon(
+        100% 0,
+        var(--d) 0,
+        0 var(--d),
+        0 100%,
+        calc(100% - var(--d)) 100%,
+        100% calc(100% - var(--d))
+    );
+    background: conic-gradient(
+            at var(--d) calc(100% - var(--d)),
+            #0000 25%,
+            #55b9a1 0 62.5%,
+            #439c87 0
+        )
+        border-box #3e9983;
     /* the color */
 }
 
@@ -519,7 +558,7 @@ hr {
     width: 110px;
 
     clip-path: polygon(var(--p) 0, calc(100% - var(--p)) 0, 100% 100%, 0 100%);
-    background: #B3D6AA;
+    background: #b3d6aa;
 }
 
 .parallelogram {
@@ -529,7 +568,7 @@ hr {
     width: 110px;
 
     clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
-    background: #D95B43;
+    background: #d95b43;
 }
 
 .curved-rectangle {
@@ -539,23 +578,51 @@ hr {
     width: 120px;
     height: 90px;
 
-    background: #E3C15B;
-    mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))), #0000 calc(100% - 1px), #000);
-    clip-path: ellipse(calc(var(--c)*1%) 100% at top);
+    background: #e3c15b;
+    mask: radial-gradient(
+        calc(var(--c) * 1%) 100% at 50% calc(-100% * cos(asin(50 / var(--c)))),
+        #0000 calc(100% - 1px),
+        #000
+    );
+    clip-path: ellipse(calc(var(--c) * 1%) 100% at top);
 }
 
 .blob {
     aspect-ratio: 1;
     width: 80px;
     height: 80px;
-    clip-path: shape(from 87.45% 45.02%, curve to 92.48% 56.45% with 90.99% 50.00%, curve to 92.05% 69.35% with 93.97% 62.91%, curve to 82.42% 77.15% with 90.14% 75.80%, curve to 71.01% 83.22% with 74.69% 78.49%, curve to 61.91% 91.53% with 67.33% 87.95%, curve to 49.74% 96.95% with 56.49% 95.12%, curve to 38.70% 91.46% with 42.99% 98.79%, curve to 25.99% 85.79% with 34.41% 84.13%, curve to 15.38% 80.54% with 17.56% 87.44%, curve to 14.30% 66.90% with 13.20% 73.65%, curve to 13.33% 55.08% with 15.41% 60.16%, curve to 11.20% 44.30% with 11.25% 50.00%, curve to 11.95% 32.32% with 11.14% 38.59%, curve to 16.84% 21.25% with 12.75% 26.06%, curve to 27.31% 15.38% with 20.92% 16.44%, curve to 38.83% 11.12% with 33.70% 14.32%, curve to 50.39% 5.23% with 43.95% 7.93%, curve to 62.85% 5.60% with 56.83% 2.53%, curve to 72.70% 14.03% with 68.88% 8.67%, curve to 79.11% 24.51% with 76.53% 19.39%, curve to 82.80% 34.84% with 81.69% 29.63%, curve to 87.45% 45.02% with 83.91% 40.04%);
+    clip-path: shape(
+        from 87.45% 45.02%,
+        curve to 92.48% 56.45% with 90.99% 50%,
+        curve to 92.05% 69.35% with 93.97% 62.91%,
+        curve to 82.42% 77.15% with 90.14% 75.8%,
+        curve to 71.01% 83.22% with 74.69% 78.49%,
+        curve to 61.91% 91.53% with 67.33% 87.95%,
+        curve to 49.74% 96.95% with 56.49% 95.12%,
+        curve to 38.7% 91.46% with 42.99% 98.79%,
+        curve to 25.99% 85.79% with 34.41% 84.13%,
+        curve to 15.38% 80.54% with 17.56% 87.44%,
+        curve to 14.3% 66.9% with 13.2% 73.65%,
+        curve to 13.33% 55.08% with 15.41% 60.16%,
+        curve to 11.2% 44.3% with 11.25% 50%,
+        curve to 11.95% 32.32% with 11.14% 38.59%,
+        curve to 16.84% 21.25% with 12.75% 26.06%,
+        curve to 27.31% 15.38% with 20.92% 16.44%,
+        curve to 38.83% 11.12% with 33.7% 14.32%,
+        curve to 50.39% 5.23% with 43.95% 7.93%,
+        curve to 62.85% 5.6% with 56.83% 2.53%,
+        curve to 72.7% 14.03% with 68.88% 8.67%,
+        curve to 79.11% 24.51% with 76.53% 19.39%,
+        curve to 82.8% 34.84% with 81.69% 29.63%,
+        curve to 87.45% 45.02% with 83.91% 40.04%
+    );
 }
 
 .tent {
     width: 80px;
     height: 80px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background: #F68953;
+    background: #f68953;
 }
 
 .flower {
@@ -567,12 +634,18 @@ hr {
 .octagon {
     width: 80px;
     aspect-ratio: 1;
-    --o: calc(50%*tan(-22.5deg));
-    clip-path: polygon(var(--o) 50%,
-            50% var(--o),
-            calc(100% - var(--o)) 50%,
-            50% calc(100% - var(--o)));
-    background: #35ABE2;
+    --o: calc(50% * tan(-22.5deg));
+    clip-path: polygon(
+        var(--o) 50%,
+        50% var(--o),
+        calc(100% - var(--o)) 50%,
+        50% calc(100% - var(--o))
+    );
+    background: #35abe2;
+}
+
+.button-container {
+    display: flex;
 }
 
 .slanted-edge {
@@ -581,7 +654,7 @@ hr {
     height: 80px;
     aspect-ratio: 1;
     clip-path: polygon(var(--p) 0, 100% 0, 100% 100%, 0 100%);
-    background: #C44D58;
+    background: #c44d58;
 }
 
 .rhombus {
@@ -589,7 +662,7 @@ hr {
     /* adjust to control the size  */
     aspect-ratio: 1;
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    background: #6139D0;
+    background: #6139d0;
 }
 
 /* Events */
@@ -632,7 +705,6 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-
 }
 
 .scroll {
@@ -645,7 +717,6 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
 
 /* Wrapper for sidebar + gallery */
 .container {
@@ -683,7 +754,6 @@ footer {
     font-size: 0.7rem;
 }
 
-
 /* Main content area */
 .main-content {
     overflow-y: auto;
@@ -715,6 +785,22 @@ footer {
     width: 100%;
     break-inside: avoid;
     margin-bottom: 1rem;
+}
+
+.blog-post {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.blog-menu ul li {
+    list-style-type: none;
+}
+
+.blog-menu ul li a {
+    background-color: var(--color-dark-gray);
+    color: var(--color-faded-white);
+    padding: 1rem;
+    text-decoration: none;
 }
 
 .gallery a:hover img {
