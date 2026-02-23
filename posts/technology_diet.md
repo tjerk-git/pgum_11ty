@@ -1,33 +1,15 @@
 ---
-title: "Hello, its me Tjerk, your favorite Internet Nutritionist"
+title: "Doomscroll December"
 date: 2025-12-11
 layout: post
 ---
-
-# Hello, its me Tjerk, your favorite Internet Nutritionist
-
-Just like a traditional dietitian helps you understand what you eat, how it affects your body, and how to build healthier habits, I'm here to do the same for your technology consumption.
 
 ### Welcome to Doomscroll December Participants!
 If you're here from the Doomscroll December challenge, welcome! You are free to use any of these tips and tricks to reclaim your time. If you have your own tips or want to share your journey, please message me at [hello@potloodgum.com](mailto:hello@potloodgum.com).
 
 Also, GREAT F*CKING JOB, *[look at you, who would have thought huh? not me?](https://www.youtube.com/watch?v=3Yd3lQVbkYc)*
 
-
-
-We live in an age of infinite digital abundance. Information, entertainment, and connection are available on tap, 24/7. But just because the buffet is open all night doesn't mean we should never stop eating.
-
-Most of us are consuming "junk tech"—content that is highly processed, addictive, and ultimately leaves us feeling drained rather than nourished.
-
-*Bon appétit.* - Tjerk
-
-## Why We Need a Diet
-
-If you ate fast food for every meal, you'd feel sluggish, your sleep would suffer, and your long-term health would deteriorate. Digital consumption is no different.
-
-- **Mindless Snacking:** Checking your phone every 5 minutes "just in case".
-- **Binge Eating:** Losing three hours to a TikTok, Reels , Shorts hole.
-- **Empty Calories:** Doomscrolling through news that makes you anxious but gives you no agency to act.
+Also, if you don't know what Doomscroll December is, it's the iniative to stop consuming at least one platform for a month to see how you feel.
 
 
 ### Adding Friction
@@ -40,7 +22,7 @@ We often open apps unconsciously. It's a muscle memory: unlock phone -> swipe ->
 
 
 ### The YouTube Detox
-YouTube is a prime example of a platform that can be either a university or a slot machine. The default homepage is designed to distract you.
+YouTube is a prime example of a slot machine. 
 
 **The Fix:**
 - **Install an Extension:** Use browser extensions like [Unhook](https://unhook.app/) or [DF Tube](https://chromewebstore.google.com/detail/hide-shorts-for-youtube/ankepacjgoajhjpenegknbefpmfffdic) (Distraction Free YouTube).
@@ -74,21 +56,3 @@ Give your devices a permanent home.
 
 ### The Weekly Blackout (Kill the Router)
 Sometimes the only way to win is not to play. Pick one day a week (maybe Sunday) to just... turn it off.
-
-**The Fix:**
-- **Manual Mode:** Walk over to your router. Pull the plug. Enjoy the silence. Pretend it's 1995 or that the internet is "down" for maintenance.
-- **Automate It:** Use a simple smart plug to schedule this. Set it to cut power at 8:00 AM on Sunday and restore it at 8:00 AM on Monday. It requires zero willpower when the house itself decides it's time to disconnect.
-
-### The Double-Edged Sword of AI
-AI tools like ChatGPT, Claude, or Gemini are incredible for brainstorming, summarizing, or finding quick answers. They are the "convenience store" of the internet: fast, cheap, and accessible.
-
-**The Risk:**
-- **Nutritional Void:** Just as fast food fills you up without nourishing you, AI can give you an answer without understanding.
-- **Misinformation:** AI hallucinations are real. It can confidently state falsehoods as facts.
-- **Atrophy of Critical Thinking:** If you outsource every question and creative thought to a bot, your own cognitive muscles weaken. You stop connecting dots yourself.
-
-**The Fix:**
-- **Use it as a Sous-Chef, not the Head Chef:** Let it chop the vegetables (brainstorm, summarize), but *you* do the cooking (critical analysis, final decisions).
-- **Fact Check:** Treat AI output as a rough draft, not the final truth. Verify important claims. Don't let it replace your own judgment.
-
-
