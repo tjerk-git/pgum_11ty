@@ -591,6 +591,7 @@ hr {
     aspect-ratio: 1;
     width: 80px;
     height: 80px;
+    background: #000764;
     clip-path: shape(
         from 87.45% 45.02%,
         curve to 92.48% 56.45% with 90.99% 50%,
