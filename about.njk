@@ -25,12 +25,10 @@ description: Tjerk Dijkstra — designer, developer and lecturer. Get in touch.
 
   <div class="pg-contact-form">
     <form
-      id="pg-contact-form"
       action="https://submit-form.com/PXf9BvPaG"
       method="POST"
     >
-      <input type="hidden" name="_redirect" value="false">
-      <input type="hidden" name="_append" value="false">
+      <input type="hidden" name="_redirect" value="https://potloodgum.com/about/?sent=1">
 
       <div class="pg-form-group">
         <label for="name">Your name</label>
@@ -53,28 +51,14 @@ description: Tjerk Dijkstra — designer, developer and lecturer. Get in touch.
         Send message
         <svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
       </button>
-
-      <div class="pg-form-success" id="pg-form-success">
-        Thanks! I'll get back to you soon.
-      </div>
     </form>
+
+    {% if page.url contains 'sent=1' %}
+    <div class="pg-form-success" style="display:block">
+      Thanks! I'll get back to you soon.
+    </div>
+    {% endif %}
   </div>
 </div>
 
 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-<script>
-  const form = document.getElementById('pg-contact-form');
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const res = await fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { Accept: 'application/json' },
-    });
-    if (res.ok) {
-      form.reset();
-      document.getElementById('pg-form-success').style.display = 'block';
-    }
-  });
-</script>
