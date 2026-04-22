@@ -4,6 +4,7 @@
     { label: 'Websites',      shape: 'square',   href: '/websites/' },
     { label: 'Photography',   shape: 'circle',   href: '/photography/' },
     { label: 'Offline',       shape: 'rect',     href: '/offline/' },
+    { label: 'Playlists',     shape: 'triangle', href: '/playlists/' },
     { label: 'Talk to Tjerk', shape: 'hexagon',  href: '/about/' },
   ];
 

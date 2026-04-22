@@ -658,6 +658,17 @@ a {
 }
 
 /* ── Websites / Interview cards ────────────────────────────── */
+/* ── Playlists ──────────────────────────────────────────────── */
+.pg-playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+.pg-playlist-embed {
+  width: 100%;
+}
+
 /* ── Websites Grid ──────────────────────────────────────────── */
 .pg-website-grid {
   display: grid;
@@ -1317,6 +1328,7 @@ a {
   .pg-contact-layout { grid-template-columns: 1fr; }
   .pg-about-entry { grid-template-columns: 1fr; }
   .pg-offline-project { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
+  .pg-playlist-grid { grid-template-columns: 1fr; }
 
   /* Contact form */
   .pg-contact-form { max-width: 100%; }
