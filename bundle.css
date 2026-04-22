@@ -1323,6 +1323,7 @@ a {
   /* Back link */
   .pg-back { font-size: 16px; margin-bottom: 32px; }
 
-  /* Wordmark top aligns with smaller button */
-  .pg-wordmark { margin-top: 20px; }
+  /* Wordmark clears the fixed menu button */
+  .pg-wordmark { margin-top: 20px; max-width: calc(100% - 120px); }
+  .pg-tagline { max-width: calc(100% - 120px); }
 }
