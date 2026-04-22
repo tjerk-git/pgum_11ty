@@ -18,6 +18,9 @@ title: Potloodgum
       {% if date %}<span class="pg-article-date">{{ date | fromNow }}</span>{% endif %}
     </div>
     {{ content | safe }}
+    <div class="pg-post-clap">
+      <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}"></div>
+    </div>
   </div>
 
   <div style="margin-top:56px;max-width:720px;margin-left:auto;margin-right:auto">
