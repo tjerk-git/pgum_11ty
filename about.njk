@@ -53,11 +53,14 @@ description: Tjerk Dijkstra — designer, developer and lecturer. Get in touch.
       </button>
     </form>
 
-    {% if page.url contains 'sent=1' %}
-    <div class="pg-form-success" style="display:block">
+    <div class="pg-form-success" id="pg-form-success">
       Thanks! I'll get back to you soon.
     </div>
-    {% endif %}
+    <script>
+      if (window.location.search.includes('sent=1')) {
+        document.getElementById('pg-form-success').style.display = 'block';
+      }
+    </script>
   </div>
 </div>
 
