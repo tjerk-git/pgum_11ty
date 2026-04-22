@@ -4,52 +4,83 @@ title: Potloodgum A design studio with one employee* that tries to fix the world
 description: Potloodgum is a design studio run by Tjerk Dijkstra. Teaching, websites, photography, print and more.
 ---
 
-<style>#pg-menu-btn .pg-btn-label { display: none; }</style>
+<div class="pg-home">
 
-<div class="pg-menu-wrap">
-  <div class="pg-wordmark">POTLOODGUM</div>
-  <div class="pg-tagline">A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.</div>
+  <div class="pg-home-hero">
+    <div class="pg-wordmark">POTLOODGUM</div>
+    <p class="pg-home-hero-tagline">A design studio with one&nbsp;employee* that tries to fix the world in tiny steps &mdash; keeping&nbsp;it human and&nbsp;weird.</p>
+    <p class="pg-home-hero-footnote">* that&rsquo;s Tjerk, based in Leeuwarden</p>
+  </div>
 
-  <ul class="pg-nav-list">
-    <li>
-      <a class="pg-nav-item" href="/now/">
-        <span class="pg-nav-shape"><div class="shape-diamond"></div></span>
-        <span class="pg-nav-label">Writing/Teaching/Now</span>
-      </a>
-    </li>
-    <li>
-      <a class="pg-nav-item" href="/websites/">
-        <span class="pg-nav-shape"><div class="shape-square"></div></span>
-        <span class="pg-nav-label">Websites</span>
-      </a>
-    </li>
-    <li>
-      <a class="pg-nav-item" href="/photography/">
-        <span class="pg-nav-shape"><div class="shape-circle"></div></span>
-        <span class="pg-nav-label">Photography</span>
-      </a>
-    </li>
-    <li>
-      <a class="pg-nav-item" href="/offline/">
-        <span class="pg-nav-shape"><div class="shape-rect"></div></span>
-        <span class="pg-nav-label">Offline</span>
-      </a>
-    </li>
-    <li>
-      <a class="pg-nav-item" href="/playlists/">
-        <span class="pg-nav-shape"><div class="shape-triangle"></div></span>
-        <span class="pg-nav-label">Playlists</span>
-      </a>
-    </li>
-    <li>
-      <a class="pg-nav-item" href="/about/">
-        <span class="pg-nav-shape">
-          <svg width="36" height="40" viewBox="0 0 40 46" fill="none">
-            <polygon points="20,2 38,12 38,34 20,44 2,34 2,12" stroke="#343131" stroke-width="3" fill="none"/>
-          </svg>
-        </span>
-        <span class="pg-nav-label">Talk to Tjerk*</span>
-      </a>
-    </li>
-  </ul>
+  <div class="pg-home-grid">
+
+    {% set latestPost = collections.posts | reverse | first %}
+    <a href="{{ latestPost.url }}" class="pg-home-card pg-home-card--writing">
+      <div class="pg-home-card-label">
+        <div class="shape-diamond"></div>
+        <span style="color:#e05386">Writing</span>
+      </div>
+      <div class="pg-home-card-content">
+        <div class="pg-home-card-eyebrow">Latest story</div>
+        <div class="pg-home-card-title">{{ latestPost.data.title }}</div>
+        {% if latestPost.data.description %}<div class="pg-home-card-desc">{{ latestPost.data.description }}</div>{% endif %}
+      </div>
+      <div class="pg-home-card-more" style="color:#e05386">
+        Read story
+        <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+      </div>
+    </a>
+
+    <a href="/photography/" class="pg-home-card pg-home-card--photography">
+      <img src="/images/photos/25.jpg" alt="Pianist on stage, spotlight from above" class="pg-home-card-bg">
+      <div class="pg-home-card-inner">
+        <div class="pg-home-card-label">
+          <div class="shape-circle"></div>
+          <span>Photography</span>
+        </div>
+        <div class="pg-home-card-overlay-footer">
+          <div class="pg-home-card-overlay-title">Slow photography</div>
+          <div class="pg-home-card-more">
+            See all photos
+            <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="/websites/" class="pg-home-card pg-home-card--websites">
+      <img src="/images/tienskip.jpg" alt="Tienskip" class="pg-home-card-bg">
+      <div class="pg-home-card-inner">
+        <div class="pg-home-card-label">
+          <div class="shape-square"></div>
+          <span>Websites</span>
+        </div>
+        <div class="pg-home-card-overlay-footer">
+          <div class="pg-home-card-overlay-title">Tienskip</div>
+          <div class="pg-home-card-more">
+            See all websites
+            <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="/offline/" class="pg-home-card pg-home-card--offline">
+      <img src="/images/videobooth.jpg" alt="Prutt'l Poal videobooth" class="pg-home-card-bg">
+      <div class="pg-home-card-inner">
+        <div class="pg-home-card-label">
+          <div class="shape-rect"></div>
+          <span>Offline</span>
+        </div>
+        <div class="pg-home-card-overlay-footer">
+          <div class="pg-home-card-overlay-title">Stuff you can touch</div>
+          <div class="pg-home-card-more">
+            See offline work
+            <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
 </div>
