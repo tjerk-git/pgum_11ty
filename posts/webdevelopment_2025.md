@@ -220,7 +220,7 @@ Follow [Kevin Powell](https://www.youtube.com/@KevinPowell) for daily insights
 
 ### 2. So many freaking resources
 
-YouTube, AI, tutorials, Codepen, Stack Overflow, GitHub, Discord, Reddit—the web is overflowing with resources.
+YouTube, AI, tutorials, Codepen, Stack Overflow, GitHub, Discord, Reddit the web is overflowing with resources.
 
 All aggregated by A.I in Claude or LeChat
 

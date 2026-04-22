@@ -44,7 +44,7 @@ Willpower is a finite resource. Don't rely on it. Instead, block the distraction
 **The Fix:**
 - **[NextDNS](https://nextdns.io/)**: This is a free functionality that works as a "firewall" for your internet connection.
 - **How it works:** You recognize specific domains that are harmful to your focus (e.g., `tiktok.com`, gambling sites, or ad servers). You add them to your blocklist.
-- **The Result:** When you try to load these sites—whether on your phone, laptop, or tablet—they simply won't load. It cuts the loop before it even starts.
+- **The Result:** When you try to load these sites whether on your phone, laptop, or tablet they simply won't load. It cuts the loop before it even starts.
 
 ### Fixed Device Locations (The "Simone Giertz" Rule)
 We've made our devices portable, so they follow us everywhere: to the toilet, to the bed, to the dinner table. This ubiquity is the root of the problem.

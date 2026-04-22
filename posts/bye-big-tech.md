@@ -2,7 +2,7 @@
 title: "Using tech with my own well defined intentions"
 date: 2026-02-18
 layout: post
-description: "Saying goodbye to big tech, one service at a time. Not a manifesto — just a log."
+description: "Saying goodbye to big tech, one service at a time. Not a manifesto just a log."
 ---
 
 # Using tech with my own well defined intentions

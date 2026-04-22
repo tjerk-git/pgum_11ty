@@ -14,7 +14,7 @@ But the real frustration hit when I discovered that the lo-fi jazz I’d been li
 
 Yeah, I fell for it... and I felt betrayed.
 
-It started when I thought: _this music is almost too clean._ So I tried to find out who played the drums. No name. Weird. Maybe a new band? Oh, 2025 release... pretty new. But wait—**seven albums already?**
+It started when I thought: _this music is almost too clean._ So I tried to find out who played the drums. No name. Weird. Maybe a new band? Oh, 2025 release... pretty new. But wait **seven albums already?**
 
 I’m used to King Gizzard’s crazy output, but this felt impossible. And it was. Turns out, they found the sounds that tickle people like me, generated a bunch of artwork mimicking other artists, and handed me nothing more than an echo of a real band. **Fuck that.**
 
@@ -28,7 +28,7 @@ Feels good.
 
 ## Discovery
 
-Finding new music has always been one of my favorite things—like when I stumbled onto the band _Chartreuse_ (love them).
+Finding new music has always been one of my favorite things like when I stumbled onto the band _Chartreuse_ (love them).
 
 So now I’m on the hunt for blogs or indie radio stations that can help me discover fresh stuff. Hopefully it’s more fun than an algorithm.
 
