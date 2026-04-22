@@ -62,4 +62,18 @@ layout: layout.njk
       <div class="pg-a">{{ surprise }}</div>
     </div>
   </div>
+
+  {% if systems %}
+  <div class="pg-detail-systems">
+    <div class="pg-q">What else was built?</div>
+    <div class="pg-systems-grid">
+      {% for s in systems %}
+      <div class="pg-system-item">
+        <div class="pg-system-title">{{ s.title }}</div>
+        <div class="pg-system-desc">{{ s.description }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </div>

@@ -923,6 +923,37 @@ a {
   padding-bottom: 64px;
 }
 .pg-detail-qa-item { display: flex; flex-direction: column; gap: 10px; }
+.pg-detail-systems {
+  max-width: 860px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pg-systems-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  border: 2px solid var(--color-black);
+}
+.pg-system-item {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 2px solid var(--color-black);
+}
+.pg-system-item:last-child { border-right: none; }
+.pg-system-title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+}
+.pg-system-desc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
 
 /* legacy interview styles kept for reference */
 .pg-websites-content {
