@@ -2,6 +2,7 @@
 title: "Web Development in 2025, a design lecturer's perspective."
 date: 2025-03-31
 layout: post
+description: "What I tell my students. What the industry gets wrong. Where I think it's going."
 ---
 
 # Web Development in 2025, a Design Lecturer's Perspective

@@ -1,165 +1,49 @@
 ---
 layout: layout.njk
-title: Potloodgum | Human-Centered Webdesign for Non-Profits
-description: Potloodgum creates accessible and impactful web design solutions for non-profit organizations and social causes.
-keywords: human-centered webdesign, accessible web design Netherlands, non-profit website designer Leeuwarden, social impact web development, Tjerk Dijkstra web designer
+title: Potloodgum — A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.
+description: Potloodgum is a design studio run by Tjerk Dijkstra. Teaching, websites, photography, print and more.
 ---
 
-{% include "partials/_header.njk" %}
-<main>
-    <div class="container">
-        <div class="sidebar">
-            <img src="/images/tjerk-dijkstra.jpg" alt="Tjerk Dijkstra">
-                <h1>Tjerk Dijkstra</h1>
-                <p>Hi, Potloodgum is a design studio run by me. My main job is teaching at the Interactive Design Studio for NHL STENDEN.</p>
-                <p>I like helping people by making easy, fun and quirky web applications for
-                                        them.</p>
-                <p>I also have too many side
-                    <a href="#projects">
-                        <span class="highlight-marker">projects</span>
-                    </a>,
-                                        some
-                    <a href="#lectures">
-                        <span class="highlight-marker-blue">lectures</span>
-                    </a>
-                    about design stuff
-                                        and some analog
-                    <a href="#photography">
-                        <span class="highlight-marker-black">photography.</span>
-                    </a>
-                </p>
-                <p>Have fun, check out my stuff:
-                    <a href="mailto:hello@potloodgum.com">hello@potloodgum.com</a>
-                </p>
-            </div>
-            <div class="main-content">
-                <h2 id="projects">Projects</h2>
-                <section class="color-pink-light">
-                    <div class="content-wrapper-sunk">
-                        <div class="trading-cards">
-                            {% for project in collections.projects %}
-                                <div class="card">
-                                    <h3>{{ project.data.title }}</h3>
-                                    <div class="{{ project.data.shape }}"></div>
-                                    <div class="card-footer">
-                                        <a target="_blank" href="{{ project.data.url }}">{{ project.data.url }}
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="16"
-                                                height="16"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                                <polyline points="15 3 21 3 21 9"></polyline>
-                                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </section>
-                <h2 id="lectures">Lectures & Ramblings</h2>
-                <section class="color-blue">
-                    <div class="content-wrapper-sunk">
-                        {% for post in collections.posts | reverse %}
-                            <a href="{{ post.url }}" class="event">
-                                <div class="event-info">
-                                    <h3>{{ post.data.title }}</h3>
-                                    <p>{{ post.data.date | fromNow }}</p>
-                                </div>
-                                <div class="event-action">&gt;&gt;</div>
-                            </a>
-                        {% endfor %}
-                    </div>
-                </section>
-                <h2 id="photography">Photography</h2>
-                <section>
-                    <div class="content-wrapper-sunk">
-                        <div class="gallery">
-                            <a href="/images/photos/25.jpg" data-lightbox="gallery" data-title="Black and white photo of a pianist sitting at a grand piano on stage">
-                                <img src="/images/photos/25.jpg" alt="Black and white photo of a pianist sitting at a grand piano on stage">
-                            </a>
-                            <a href="/images/photos/24.jpg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/24.jpg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/23.jpeg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/23.jpeg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/22.jpeg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/22.jpeg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/21.jpeg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/21.jpeg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/20.jpeg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/20.jpeg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/19.jpg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/19.jpg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/18.jpg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/18.jpg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/17.jpg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/17.jpg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/16.jpeg" data-lightbox="gallery" data-title="Photography by Tjerk Dijkstra">
-                                <img src="/images/photos/16.jpeg" alt="Photography by Tjerk Dijkstra">
-                            </a>
-                            <a href="/images/photos/15.jpeg" data-lightbox="gallery" data-title="Additional photograph">
-                                <img src="/images/photos/15.jpeg" alt="Additional photograph">
-                            </a>
-                            <a href="/images/photos/14.jpeg" data-lightbox="gallery" data-title="A picture of a red lightbeam traveling along a road">
-                                <img src="/images/photos/14.jpeg" alt="A picture of a red lightbeam traveling along a road">
-                            </a>
-                            <a href="/images/photos/13.jpeg" data-lightbox="gallery" data-title="A black and white picture of reeds">
-                                <img src="/images/photos/13.jpeg" alt="A black and white picture of reeds">
-                            </a>
-                            <a href="/images/photos/12.jpeg" data-lightbox="gallery" data-title="A landscape picture of a dyke">
-                                <img src="/images/photos/12.jpeg" alt="A landscape picture of a dyke">
-                            </a>
-                            <a href="/images/photos/11.jpeg" data-lightbox="gallery" data-title="A black and white portrait picture">
-                                <img src="/images/photos/11.jpeg" alt="A black and white portrait picture">
-                            </a>
-                            <a href="/images/photos/10.jpeg" data-lightbox="gallery" data-title="A black and white landscape photo of a lonely tower">
-                                <img src="/images/photos/10.jpeg" alt="A black and white landscape photo of a lonely tower">
-                            </a>
-                            <a href="/images/photos/9.jpeg" data-lightbox="gallery" data-title="A picture taken from a fast moving car">
-                                <img src="/images/photos/9.jpeg" alt="A picture taken from a fast moving car">
-                            </a>
-                            <a href="/images/photos/8.jpeg" data-lightbox="gallery" data-title="A woman standing in the North Sea">
-                                <img src="/images/photos/8.jpeg" alt="A woman standing in the North Sea">
-                            </a>
-                            <a href="/images/photos/7.jpeg" data-lightbox="gallery" data-title="A black and white picture of a reflection of a dock">
-                                <img src="/images/photos/7.jpeg" alt="A black and white picture of a reflection of a dock">
-                            </a>
-                            <a href="/images/photos/6.jpeg" data-lightbox="gallery" data-title="A view through a window of frozen trees">
-                                <img src="/images/photos/6.jpeg" alt="A view through a window of frozen trees">
-                            </a>
-                            <a href="/images/photos/5.jpeg" data-lightbox="gallery" data-title="High contrast picture taken from a low angle">
-                                <img src="/images/photos/5.jpeg" alt="High contrast picture taken from a low angle">
-                            </a>
-                            <a href="/images/photos/4.jpeg" data-lightbox="gallery" data-title="A big rocky cliff in Portugal">
-                                <img src="/images/photos/4.jpeg" alt="A big rocky cliff in Portugal">
-                            </a>
-                            <a href="/images/photos/3.jpeg" data-lightbox="gallery" data-title="A frozen lake in Finland">
-                                <img src="/images/photos/3.jpeg" alt="A frozen lake in Finland">
-                            </a>
-                            <a href="/images/photos/2.jpeg" data-lightbox="gallery" data-title="Grainy black and white picture of a tree and two doves">
-                                <img src="/images/photos/2.jpeg" alt="Grainy black and white picture of a tree and two doves">
-                            </a>
-                            <a href="/images/photos/1.jpeg" data-lightbox="gallery" data-title="Black and white picture of laundry hanging on a washing line">
-                                <img src="/images/photos/1.jpeg" alt="Black and white picture of laundry hanging on a washing line">
-                            </a>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </section>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </main>
+<style>#pg-menu-btn .pg-btn-label { display: none; }</style>
+
+<div class="pg-menu-wrap">
+  <div class="pg-wordmark">POTLOODGUM</div>
+  <div class="pg-tagline">A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.</div>
+
+  <ul class="pg-nav-list">
+    <li>
+      <a class="pg-nav-item" href="/now/">
+        <span class="pg-nav-shape"><div class="shape-diamond"></div></span>
+        <span class="pg-nav-label">Writing/Teaching/Now</span>
+      </a>
+    </li>
+    <li>
+      <a class="pg-nav-item" href="/websites/">
+        <span class="pg-nav-shape"><div class="shape-square"></div></span>
+        <span class="pg-nav-label">Websites</span>
+      </a>
+    </li>
+    <li>
+      <a class="pg-nav-item" href="/photography/">
+        <span class="pg-nav-shape"><div class="shape-circle"></div></span>
+        <span class="pg-nav-label">Photography</span>
+      </a>
+    </li>
+    <li>
+      <a class="pg-nav-item" href="/offline/">
+        <span class="pg-nav-shape"><div class="shape-rect"></div></span>
+        <span class="pg-nav-label">Offline</span>
+      </a>
+    </li>
+    <li>
+      <a class="pg-nav-item" href="/about/">
+        <span class="pg-nav-shape">
+          <svg width="36" height="40" viewBox="0 0 40 46" fill="none">
+            <polygon points="20,2 38,12 38,34 20,44 2,34 2,12" stroke="#343131" stroke-width="3" fill="none"/>
+          </svg>
+        </span>
+        <span class="pg-nav-label">Talk to Tjerk*</span>
+      </a>
+    </li>
+  </ul>
+</div>

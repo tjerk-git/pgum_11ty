@@ -2,6 +2,7 @@
 title: "Doomscroll December"
 date: 2025-12-11
 layout: post
+description: "A technology diet for the darkest month of the year."
 ---
 
 ### Welcome to Doomscroll December Participants!

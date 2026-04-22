@@ -1,51 +1,80 @@
 ---
 layout: layout.njk
-title: About Tjerk Dijkstra | Potloodgum - Webdesign for Human Beings
-description: Meet Tjerk Dijkstra, a lecturer at NHL Stenden and freelance developer focused on creating social impact through accessible and human-centered web design.
-keywords: Tjerk Dijkstra, web designer Leeuwarden, NHL Stenden lecturer, accessible web design, human-centered design, social impact developer
+title: Talk to Tjerk — Potloodgum
+description: Tjerk Dijkstra — designer, developer and lecturer. Get in touch.
 ---
-{% include "partials/_header.njk" %}
 
-<main>
-    <section class="bio">
-      <h1 class="name">TJERK JIPPE DIJKSTRA</h1>
-      <span>Pronounced as <em>"Chairk"</em></span>
+<div class="pg-page">
+  <div class="pg-wordmark">POTLOODGUM</div>
+  <div class="pg-tagline">A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.</div>
 
-  
-      <div class="canvas-wrapper" title="Draw on my picture!">
-        <canvas id="profileCanvas"></canvas>
-        <span class="tooltip">✏️ Draw here!</span>
+  <a href="/" class="pg-back">
+    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="#000"/></svg>
+    All work
+  </a>
+
+  <div class="pg-section-label">
+    <svg width="22" height="24" viewBox="0 0 40 46" fill="none" style="flex-shrink:0">
+      <polygon points="20,2 38,12 38,34 20,44 2,34 2,12" stroke="#343131" stroke-width="3" fill="none"/>
+    </svg>
+    <span>Talk to Tjerk</span>
+  </div>
+
+  <h1 class="pg-title">Say hi.</h1>
+  <p class="pg-intro">If you're in Leeuwarden, let's have a coffee.</p>
+
+  <div class="pg-contact-form">
+    <form
+      id="pg-contact-form"
+      action="https://submit-form.com/PXf9BvPaG"
+      method="POST"
+    >
+      <input type="hidden" name="_redirect" value="false">
+      <input type="hidden" name="_append" value="false">
+
+      <div class="pg-form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jan de Vries">
       </div>
 
-      <p class="summary">
-        I want to work on projects that have a social impact.
-        Sometimes that means exploring and developing new concepts and interventions and co-creating with the people involved.
-        <br><br>
-        Currently I am a lecturer at NHL Stenden University of Applied Sciences.
-        And a freelance developer and designer at Potloodgum.
-      </p>
-
-      <div class="bio-actions">
-        <a href="mailto:hello@potloodgum.com" aria-label="Send email to Tjerk">Reach out to me</a>
+      <div class="pg-form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="jan@example.nl">
       </div>
 
-      <div class="social-links">
-        <a href="https://github.com/tjerk-git" target="_blank" rel="noopener noreferrer" aria-label="Visit Tjerk's GitHub profile">GitHub</a>
-        <a href="https://mastodon.design/@potloodgum" target="_blank" rel="noopener noreferrer" aria-label="Follow Tjerk on Mastodon">Mastodon</a>
-        <a href="https://open.spotify.com/user/henkiebob?si=6c3fce551c7b4fe1" target="_blank" rel="noopener noreferrer" aria-label="Follow Tjerk on Spotify">Spotify</a>
-        <a href="https://letterboxd.com/chairk/" target="_blank" rel="noopener noreferrer" aria-label="Follow Tjerk on Letterboxd">Letterboxd</a>
-        <a href="https://hardcover.app/@Chairk" target="_blank" rel="noopener noreferrer" aria-label="Follow Tjerk on Hardcover">Hardcover books</a>
+      <div class="pg-form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
       </div>
-    </section>
 
-    <section class="values">
-      <h2>VALUES</h2>
-      <ul>
-        <li>OPEN SOURCE</li>
-        <li>ACCESSIBLE</li>
-        <li>SIMPLE</li>
-        <li>INCLUSIVE</li>
-        <li>DURABLE</li>
-      </ul>
-    </section>
-</main>
+      <div class="h-captcha" data-sitekey="b98cfb84-beda-4546-9f1a-2c82ddba7a0a"></div>
+
+      <button type="submit" class="pg-form-submit">
+        Send message
+        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+      </button>
+
+      <div class="pg-form-success" id="pg-form-success">
+        Thanks! I'll get back to you soon.
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+<script>
+  const form = document.getElementById('pg-contact-form');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' },
+    });
+    if (res.ok) {
+      form.reset();
+      document.getElementById('pg-form-success').style.display = 'block';
+    }
+  });
+</script>

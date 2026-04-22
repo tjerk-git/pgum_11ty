@@ -1,0 +1,62 @@
+---
+layout: layout.njk
+title: Offline — Potloodgum
+description: Physical projects by Tjerk Dijkstra — print, objects and installations.
+permalink: /offline/
+---
+
+<div class="pg-page">
+  <div class="pg-wordmark">POTLOODGUM</div>
+  <div class="pg-tagline">A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.</div>
+
+  <a href="/" class="pg-back">
+    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="#000"/></svg>
+    All work
+  </a>
+
+  <div class="pg-section-label">
+    <div class="shape-rect"></div>
+    <span>Offline</span>
+  </div>
+
+  <h1 class="pg-title">Stuff you can touch.</h1>
+
+  <hr class="pg-divider">
+
+  <div class="pg-offline-project">
+    <div class="pg-offline-image pg-offline-image--empty">
+      <span class="pg-offline-coming-soon">Cards coming soon</span>
+    </div>
+    <div class="pg-offline-info">
+      <div class="pg-offline-label">Postcards</div>
+      <div class="pg-offline-name">Brain Tickles</div>
+      <p class="pg-offline-desc">A selection of postcards that will challenge you and your friends to cultivate your weirdness. Small prompts for big uncomfortable conversations.</p>
+      <span class="pg-offline-status">In progress</span>
+    </div>
+  </div>
+
+  <div class="pg-offline-project">
+    <div class="pg-offline-image pg-offline-image--video">
+      <img src="/images/videobooth.jpg" alt="Prutt'l Poal videobooth" class="pg-video-poster">
+      <video src="/images/videobooth.mp4" muted playsinline loop class="pg-video-player"></video>
+      <div class="pg-video-play-btn" aria-label="Play video">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        Play
+      </div>
+    </div>
+    <div class="pg-offline-info">
+      <div class="pg-offline-label">Installation</div>
+      <div class="pg-offline-name">Prutt'l Poal</div>
+      <p class="pg-offline-desc">A videobooth that prompts people to be weird. Step inside, get a challenge, record yourself doing something uncomfortable or absurd.</p>
+      <span class="pg-offline-status">In progress</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.querySelector('.pg-offline-image--video').addEventListener('click', function () {
+    this.classList.add('playing');
+    this.querySelector('video').play();
+  });
+</script>

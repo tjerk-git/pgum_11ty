@@ -2,6 +2,7 @@
 title: "Creative mindset in the age of distractions"
 date: 2026-02-20
 layout: post
+description: "How to stay creative when everything is designed to pull your attention away."
 ---
 
 # Developing a Creative Mindset in an Age of Distractions

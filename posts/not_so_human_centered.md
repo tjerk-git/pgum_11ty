@@ -2,6 +2,7 @@
 title: "Not so human centered"
 date: 2024-08-08
 layout: post
+description: "A critical look at what human-centered design actually means in practice."
 ---
 
 # Not So Human-Centered Design

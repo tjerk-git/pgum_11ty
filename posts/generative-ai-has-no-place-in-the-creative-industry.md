@@ -2,6 +2,7 @@
 title: "Most A.I. has no place in the creative industry"
 date: 2026-02-20
 layout: post
+description: "Said it out loud at a lecture in Amsterdam. People disagreed. Good."
 ---
 
 # Most A.I. has no place in the creative industry 

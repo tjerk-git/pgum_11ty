@@ -2,6 +2,7 @@
 title: "Random Idea's about digital minimalism"
 date: 2026-04-02
 layout: post
+description: "Some thoughts on doing less online and why that might be the most radical thing you can do right now."
 ---
 
 # Random Idea's about digital minimalism

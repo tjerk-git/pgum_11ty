@@ -1,42 +1,37 @@
 ---
 layout: layout.njk
-title: Potloodgum | Human-Centered Webdesign for Non-Profits
-description: Potloodgum creates accessible and impactful web design solutions for non-profit organizations and social causes in the Netherlands.
+title: Potloodgum
 ---
 
-{% include "partials/_header.njk" %}
-<nav class="blog-menu">
-   <ul>
-      <li><a href="/#lectures"> < Back to all posts</a></li>
-   </ul>
-</nav>
-<section class="color-white ">
-   <div class="content-wrapper-sunk blog-post">
-      <article>
-         {{ content | safe }}
-         <div class="button-container">
-            <div data-lyket-type="clap" data-lyket-id="{{ page.fileSlug }}">
-                  <p class="sidenote">Applaud this article, hit it as many times as you like</p>
-            </div>
+<div class="pg-page">
+  <div class="pg-wordmark">POTLOODGUM</div>
+  <div class="pg-tagline">A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.</div>
 
-         </div>
-      </article>
-   </div>
-</section>
+  <a href="/now/" class="pg-back">
+    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="#000"/></svg>
+    All posts
+  </a>
 
-<section class="color-blue">
-    <div class="content-wrapper-sunk">
-    {% for post in collections.posts | reverse %}
-
-        {% if title != post.data.title %}
-        <a href="{{ post.url }}" class="event">
-            <div class="event-info">
-                <h3>{{ post.data.title }}</h3>
-                <p>{{ post.data.date | fromNow }}</p>
-            </div>
-            <div class="event-action">&gt;&gt;</div>
-        </a>
-        {% endif %}
-    {% endfor %}
+  <div class="pg-post-article">
+    <div class="pg-post-meta">
+      <span class="pg-log-tag tag-thinking">Thinking</span>
+      {% if date %}<span class="pg-article-date">{{ date | fromNow }}</span>{% endif %}
     </div>
-</section>
+    {{ content | safe }}
+  </div>
+
+  <div style="margin-top:56px;max-width:720px;margin-left:auto;margin-right:auto">
+    <div class="pg-related-label">More posts</div>
+    {% for post in collections.posts | reverse %}
+      {% if title != post.data.title %}
+      <a href="{{ post.url }}" class="pg-project-row">
+        <span class="pg-project-title">{{ post.data.title }}</span>
+        <span class="pg-project-meta">
+          {{ post.data.date | fromNow }}
+          <svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="#2f74b5"/></svg>
+        </span>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

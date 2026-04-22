@@ -2,6 +2,7 @@
 title: "I just quit Spotify"
 date: 2025-08-22
 layout: post
+description: "Why I left the world's most convenient music service and what I found on the other side."
 ---
 
 # I just quit Spotify

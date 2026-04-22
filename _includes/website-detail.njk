@@ -1,0 +1,45 @@
+---
+layout: layout.njk
+---
+<div class="pg-page pg-website-detail">
+  <div class="pg-wordmark">POTLOODGUM</div>
+  <div class="pg-tagline">A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.</div>
+
+  <a href="/websites/" class="pg-back">
+    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="#000"/></svg>
+    All websites
+  </a>
+
+  <div class="pg-section-label">
+    <div class="shape-square"></div>
+    <span style="color:#2f74b5">{{ label }}</span>
+  </div>
+
+  <div class="pg-detail-hero">
+    <div class="pg-detail-hero-image">
+      <img src="{{ image }}" alt="{{ name }}">
+    </div>
+    <div class="pg-detail-hero-info">
+      <h1 class="pg-detail-name">{{ name }}</h1>
+      {% if person %}<div class="pg-detail-person">{{ person }}</div>{% endif %}
+      <div class="pg-detail-role">{{ role }}</div>
+      <a href="{{ siteUrl }}" target="_blank" class="pg-site-link" style="margin-top:auto">
+        Visit {{ urlLabel }}
+        <svg width="14" height="14" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <blockquote class="pg-detail-quote">"{{ quote }}"</blockquote>
+
+  <div class="pg-detail-qa">
+    <div class="pg-detail-qa-item">
+      <div class="pg-q">What was the goal?</div>
+      <div class="pg-a">{{ goal }}</div>
+    </div>
+    <div class="pg-detail-qa-item">
+      <div class="pg-q">What surprised you?</div>
+      <div class="pg-a">{{ surprise }}</div>
+    </div>
+  </div>
+</div>
