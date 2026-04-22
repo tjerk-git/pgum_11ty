@@ -288,7 +288,6 @@ a {
   top: 28px; right: 56px;
   width: 172px;
   height: 172px;
-  background: transparent;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -299,13 +298,41 @@ a {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  transition: transform 0.2s ease, background 0.2s;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+  background: linear-gradient(
+    125deg,
+    #ffd6f0 0%,
+    #e0ccff 16%,
+    #b8dfff 30%,
+    #c8f8e8 44%,
+    #f8f8b8 57%,
+    #ffe0b8 70%,
+    #ffc8e8 84%,
+    #ffd6f0 100%
+  );
+  background-size: 400% 400%;
+  animation: holo-btn 8s ease infinite;
 }
+#pg-menu-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at 32% 30%, rgba(255,255,255,0.65) 0%, transparent 45%),
+    radial-gradient(ellipse at 68% 70%, rgba(255,255,255,0.2) 0%, transparent 30%);
+  pointer-events: none;
+}
+#pg-menu-btn > * { position: relative; z-index: 1; }
 #pg-menu-btn:hover { transform: scale(1.08); }
 #pg-menu-btn.scrolled {
-  background: rgba(248, 248, 248, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+@keyframes holo-btn {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 #pg-menu-btn img {
   width: 128px; height: 128px;
