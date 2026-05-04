@@ -1,86 +1,177 @@
 ---
 layout: layout.njk
-title: Potloodgum A design studio with one employee* that tries to fix the world in tiny steps keeping it human and weird.
-description: Potloodgum is a design studio run by Tjerk Dijkstra. Teaching, websites, photography, print and more.
+title: Potloodgum Fixing the world in tiny steps. A design studio with one employee* keeping it human and weird.
+description: Potloodgum is a design studio run by Tjerk Dijkstra. Websites, sideprojects, offline things, writing and photography.
 ---
 
 <div class="pg-home">
 
   <div class="pg-home-hero">
     <div class="pg-wordmark">POTLOODGUM</div>
-    <p class="pg-home-hero-tagline">A design studio with one&nbsp;employee* that tries to fix the world in tiny steps keeping&nbsp;it human and&nbsp;weird.</p>
+    <p class="pg-home-hero-tagline">A design studio with one&nbsp;employee* keeping it human and&nbsp;weird.</p>
     <p class="pg-home-hero-footnote">* that&rsquo;s Tjerk, based in Leeuwarden</p>
   </div>
 
-  <div class="pg-home-grid">
-
-    {% set latestPost = collections.posts | reverse | first %}
-    <a href="{{ latestPost.url }}" class="pg-home-card pg-home-card--writing">
-      <div class="pg-home-card-label">
-        <div class="shape-diamond"></div>
-        <span style="color:#e05386">Writing</span>
+  {# ── Websites (client work) ──────────────────────────────── #}
+  <section class="pg-strip">
+    <div class="pg-strip-head">
+      <div class="pg-strip-label">
+        <div class="shape-square"></div>
+        <span style="color:#2f74b5">Websites</span>
       </div>
-      <div class="pg-home-card-content">
-        <div class="pg-home-card-eyebrow">Latest story</div>
-        <div class="pg-home-card-title">{{ latestPost.data.title }}</div>
-        {% if latestPost.data.description %}<div class="pg-home-card-desc">{{ latestPost.data.description }}</div>{% endif %}
-      </div>
-      <div class="pg-home-card-more" style="color:#e05386">
-        Read story
+      <a href="/websites/" class="pg-strip-more" style="color:#2f74b5">
+        See all websites
         <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
-      </div>
-    </a>
+      </a>
+    </div>
+    <p class="pg-strip-lede">It&rsquo;s about the people, not the briefs.</p>
 
-    <a href="/photography/" class="pg-home-card pg-home-card--photography">
-      <img src="/images/photos/25.jpg" alt="Pianist on stage, spotlight from above" class="pg-home-card-bg">
-      <div class="pg-home-card-inner">
-        <div class="pg-home-card-label">
+    <div class="pg-strip-rail pg-strip-rail--grid">
+      <a href="/websites/cmdlwd/" class="pg-strip-card">
+        <div class="pg-strip-card-image"><img src="/images/cmdlwd.png" alt="CMD Leeuwarden"></div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Education</div>
+          <div class="pg-strip-card-name">CMD Leeuwarden</div>
+        </div>
+      </a>
+      <a href="/websites/tienskip/" class="pg-strip-card">
+        <div class="pg-strip-card-image"><img src="/images/tienskip.jpg" alt="Tienskip"></div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Teaching democracy</div>
+          <div class="pg-strip-card-name">Tienskip</div>
+        </div>
+      </a>
+      <a href="/websites/roelofschipper/" class="pg-strip-card">
+        <div class="pg-strip-card-image"><img src="/images/roelof.png" alt="Roelof Schipper"></div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Author portfolio</div>
+          <div class="pg-strip-card-name">Roelof Schipper</div>
+        </div>
+      </a>
+      <a href="/websites/tentvanjos/" class="pg-strip-card">
+        <div class="pg-strip-card-image"><img src="/images/tentvanjos.jpg" alt="Tent van Jos"></div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Branding &amp; web</div>
+          <div class="pg-strip-card-name">Tent van Jos</div>
+        </div>
+      </a>
+      <a href="/websites/wdtw/" class="pg-strip-card">
+        <div class="pg-strip-card-image"><img src="/images/wdtw.png" alt="We Design the World"></div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Festival</div>
+          <div class="pg-strip-card-name">We Design the World</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  {# ── Sideprojects (self-initiated) ───────────────────────── #}
+  <section class="pg-strip pg-strip--side">
+    <div class="pg-strip-head">
+      <div class="pg-strip-label">
+        <div class="shape-diamond"></div>
+        <span style="color:#e05386">Sideprojects</span>
+      </div>
+      <a href="/websites/#sideprojects" class="pg-strip-more" style="color:#e05386">
+        See all sideprojects
+        <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+      </a>
+    </div>
+    <p class="pg-strip-lede">Because sideprojects are secretly my main projects.</p>
+
+    <div class="pg-strip-rail">
+      <a href="/websites/sprintcards/" class="pg-strip-card pg-strip-card--side">
+        <div class="pg-strip-card-image pg-strip-card-image--logo">
+          <img src="/images/sprintcards-logo.svg" alt="Sprint.cards">
+        </div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Design tool</div>
+          <div class="pg-strip-card-name">Sprint.cards</div>
+        </div>
+      </a>
+      <a href="/websites/hamaki/" class="pg-strip-card pg-strip-card--side">
+        <div class="pg-strip-card-image pg-strip-card-image--logo">
+          <img src="/images/hamaki-logo.svg" alt="Hamaki">
+        </div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Appointment app</div>
+          <div class="pg-strip-card-name">Hamaki</div>
+        </div>
+      </a>
+      <div class="pg-strip-card pg-strip-card--side pg-strip-card--soon">
+        <div class="pg-strip-card-image pg-strip-card-image--placeholder">
+          <span>Coming soon</span>
+        </div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Weekly drawings</div>
+          <div class="pg-strip-card-name">52 Cats</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# ── Offline ────────────────────────────────────────────── #}
+  <section class="pg-strip">
+    <div class="pg-strip-head">
+      <div class="pg-strip-label">
+        <div class="shape-rect"></div>
+        <span>Offline</span>
+      </div>
+      <a href="/offline/" class="pg-strip-more">
+        See all offline
+        <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+      </a>
+    </div>
+    <p class="pg-strip-lede">Stuff you can touch.</p>
+
+    <div class="pg-strip-rail">
+      <a href="/offline/pruttl-poal/" class="pg-strip-card">
+        <div class="pg-strip-card-image"><img src="/images/videobooth.jpg" alt="Prutt'l Poal videobooth"></div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Installation</div>
+          <div class="pg-strip-card-name">Prutt&rsquo;l Poal</div>
+        </div>
+      </a>
+      <a href="/offline/brain-tickles/" class="pg-strip-card">
+        <div class="pg-strip-card-image pg-strip-card-image--placeholder">
+          <span>Coming soon</span>
+        </div>
+        <div class="pg-strip-card-body">
+          <div class="pg-strip-card-label">Postcards</div>
+          <div class="pg-strip-card-name">Brain Tickles</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  {# ── Also: writing + photography ─────────────────────────── #}
+  {% set latestPost = collections.posts | reverse | first %}
+  <section class="pg-also">
+    <div class="pg-also-label">Also on the side</div>
+    <div class="pg-also-row">
+      <a href="{{ latestPost.url }}" class="pg-also-item">
+        <div class="pg-also-item-kind">
+          <div class="shape-circle" style="background:#e05386"></div>
+          <span>Writing</span>
+        </div>
+        <div class="pg-also-item-title">{{ latestPost.data.title }}</div>
+        <div class="pg-also-item-more">
+          Latest story
+          <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
+        </div>
+      </a>
+      <a href="/photography/" class="pg-also-item">
+        <div class="pg-also-item-kind">
           <div class="shape-circle"></div>
           <span>Photography</span>
         </div>
-        <div class="pg-home-card-overlay-footer">
-          <div class="pg-home-card-overlay-title">Slow photography</div>
-          <div class="pg-home-card-more">
-            See all photos
-            <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
-          </div>
+        <div class="pg-also-item-title">I just don&rsquo;t like instagram so they are here.</div>
+        <div class="pg-also-item-more">
+          See photos
+          <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
+  </section>
 
-    <a href="/websites/" class="pg-home-card pg-home-card--websites">
-      <img src="/images/tienskip.jpg" alt="Tienskip" class="pg-home-card-bg">
-      <div class="pg-home-card-inner">
-        <div class="pg-home-card-label">
-          <div class="shape-square"></div>
-          <span>Websites</span>
-        </div>
-        <div class="pg-home-card-overlay-footer">
-          <div class="pg-home-card-overlay-title">Tienskip</div>
-          <div class="pg-home-card-more">
-            See all websites
-            <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a href="/offline/" class="pg-home-card pg-home-card--offline">
-      <img src="/images/videobooth.jpg" alt="Prutt'l Poal videobooth" class="pg-home-card-bg">
-      <div class="pg-home-card-inner">
-        <div class="pg-home-card-label">
-          <div class="shape-rect"></div>
-          <span>Offline</span>
-        </div>
-        <div class="pg-home-card-overlay-footer">
-          <div class="pg-home-card-overlay-title">Stuff you can touch</div>
-          <div class="pg-home-card-more">
-            See offline work
-            <svg width="12" height="12" viewBox="0 0 16 16"><path d="M12.175 9L0 9V7L12.175 7L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="currentColor"/></svg>
-          </div>
-        </div>
-      </div>
-    </a>
-
-  </div>
 </div>
