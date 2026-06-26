@@ -1472,6 +1472,109 @@ a {
   color: #555;
 }
 
+/* ── Brain Tickles detail ──────────────────────────────────── */
+.pg-offline-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.pg-offline-img {
+  width: 100%;
+  display: block;
+  border: 3px solid var(--color-black);
+  box-sizing: border-box;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+.pg-offline-manifest {
+  margin-bottom: 20px;
+}
+.pg-offline-manifest p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-black);
+  margin-bottom: 14px;
+}
+.pg-offline-manifest blockquote {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-black);
+  margin: 0 0 10px 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--color-black);
+}
+.pg-offline-credits {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--fg-muted);
+  margin-top: 20px;
+}
+.pg-offline-order {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black);
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+}
+.pg-offline-order:hover { opacity: 0.7; }
+
+/* ── Lightbox ───────────────────────────────────────────────── */
+.pg-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+.pg-lightbox.is-open {
+  display: flex;
+}
+.pg-lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+.pg-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+.pg-lightbox-prev,
+.pg-lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 12px 20px;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.pg-lightbox-prev:hover,
+.pg-lightbox-next:hover { opacity: 1; }
+.pg-lightbox-prev { left: 12px; }
+.pg-lightbox-next { right: 12px; }
+
 /* ── Offline / Print Grid ──────────────────────────────────── */
 .pg-print-grid {
   display: grid;
