@@ -1471,6 +1471,11 @@ a {
   background: #f0f0f0;
   color: #555;
 }
+.pg-offline-status--soldout {
+  background: #f0f0f0;
+  color: #aaa;
+  text-decoration: line-through;
+}
 
 /* ── Brain Tickles detail ──────────────────────────────────── */
 .pg-offline-images {
