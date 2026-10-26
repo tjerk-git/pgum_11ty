@@ -53,10 +53,12 @@ layout: layout.njk
   <blockquote class="pg-detail-quote">"{{ quote }}"</blockquote>
 
   <div class="pg-detail-qa">
+    {% if goal %}
     <div class="pg-detail-qa-item">
       <div class="pg-q">What was the goal?</div>
       <div class="pg-a">{{ goal }}</div>
     </div>
+    {% endif %}
     <div class="pg-detail-qa-item">
       <div class="pg-q">What surprised you?</div>
       <div class="pg-a">{{ surprise }}</div>
